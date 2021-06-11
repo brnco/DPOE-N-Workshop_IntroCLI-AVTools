@@ -11,7 +11,15 @@
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
         <style type="text/css">
-            p { text-align: left; }
+            p { 
+                text-align: left;
+            }
+            .container{
+                display: flex;
+            }
+            .col{
+                flex: 1;
+            }
         </style>
     </head>
     <body>
@@ -73,9 +81,16 @@
                 </section>
                 <section>
                     <h3>Testing Terminal Streaming</h3><br>
-                    <p>we like scripting<br>
-                    it's very good!<br>
-                    a third thing</p>
+                    <div class="container">
+                        <div class="col">
+                            we like scripting<br>
+                            it's very good!<br>
+                            a third thing
+                        </div>
+                        <div class="col">
+                            video goes here
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
