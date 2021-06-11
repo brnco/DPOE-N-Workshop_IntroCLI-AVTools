@@ -59,7 +59,7 @@ moving files, verifying integrity of files and metadata
 
 ### Part 4 - CLI Tools for Audiovisual Formats
 
-MediaInfo + ffmpeg
+media file structure, MediaInfo + ffmpeg
 
 ### Part 5 - Intro to Scripting
 
