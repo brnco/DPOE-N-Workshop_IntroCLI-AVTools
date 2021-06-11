@@ -7,6 +7,8 @@ This single-day free webinar provides an introduction to the command line interf
 
 The official website for this webinar is located at [this link](https://www.dpoe.network/workshops/)
 
+The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
+
 ## Tools Covered
 
 While not an exhaustive list, the webinar will touch on some fundamental software to managing digital files, with an emphasis on audiovisual formats.
@@ -41,7 +43,27 @@ These tools include:
 
 ## Agenda
 
+### Part 1 - History, Context, Objectives
 
+what the command line is, what we can do with it, why it matters
+
+### Part 2 - Intro to Commands
+
+basic structures, navigation, inputs & outputs
+
+### LUNCH
+
+### Part 3 - CLI Tools for Digital Preservation
+
+moving files, verifying integrity of files and metadata
+
+### Part 4 - CLI Tools for Audiovisual Formats
+
+MediaInfo + ffmpeg
+
+### Part 5 - Intro to Scripting
+
+workflow setup, variables, loops, managing scripts
 
 ## Acknowledgements
 
