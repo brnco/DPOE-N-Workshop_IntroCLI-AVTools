@@ -21,6 +21,15 @@
                 grid-gap: 10px;
                 text-align: left;
             }
+	    #scaled-frame {
+  		zoom: 2.0;
+  		-moz-transform: scale(2.0);
+  		-moz-transform-origin: 0 0;
+  		-o-transform: scale(2.0);
+  		-o-transform-origin: 0 0;
+  		-webkit-transform: scale(2.0);
+  		-webkit-transform-origin: 0 0;
+	    }
         </style>
     </head>
     <body>
@@ -83,7 +92,7 @@
                 <section>
                     <h3>Testing Terminal Streaming</h3><br>
                     <div class="container_gridStreamCLI">
-			    <div style="border:1px solid white;height:100%;">
+			    <div id="scaled-frame" style="border:1px solid white;height:100%;">
 				    <iframe src="https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/commands.html">
 				    </iframe>
 			    </div>
