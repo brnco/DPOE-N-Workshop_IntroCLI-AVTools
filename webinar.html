@@ -137,23 +137,23 @@
         console.log(commands);
         window.onload = function(){
             console.log(commands["commands"][0]["commandName"]);
-            $('#commandName').innerHTML = commands["commands"][0]["commandName"];
-            $('#commandOperation').innerHTML = commands["commands"][0]["commandOperation"];
-            $('#commandFlags').innerHTML = commands["commands"][0]["commandFlags"];
+            $('#commandName').html = commands["commands"][0]["commandName"];
+            $('#commandOperation').html = commands["commands"][0]["commandOperation"];
+            $('#commandFlags').html = commands["commands"][0]["commandFlags"];
         }
         var currentSubSlide = 0;
         function nextSubSlide(){
             var nextSubSlide = currentSubSlide + 1;
-            $('#commandName').innerHTML = commands["commands"][nextSubSlide]["commandName"];
-            $('#commandOperation').innerHTML = commands["commands"][nextSubSlide]["commandOperation"];
-            $('#commandFlags').innerHTML = commands["commands"][nextSubSlide]["commandFlags"];
+            $('#commandName').html = commands["commands"][nextSubSlide]["commandName"];
+            $('#commandOperation').html = commands["commands"][nextSubSlide]["commandOperation"];
+            $('#commandFlags').html = commands["commands"][nextSubSlide]["commandFlags"];
             currentSubSlide = nextSubSlide;
         }
 function prevSubSlide(){
             var nextSubSlide = currentSubSlide - 1;
-            $('#commandName').innerHTML = commands["commands"][prevSubSlide]["commandName"];
-            $('#commandOperation').innerHTML = commands["commands"][prevSubSlide]["commandOperation"];
-            $('#commandFlags').innerHTML = commands["commands"][prevSubSlide]["commandFlags"];
+            $('#commandName').html = commands["commands"][prevSubSlide]["commandName"];
+            $('#commandOperation').html = commands["commands"][prevSubSlide]["commandOperation"];
+            $('#commandFlags').html = commands["commands"][prevSubSlide]["commandFlags"];
             currentSubSlide = nextSubSlide;
 }
     </script>
