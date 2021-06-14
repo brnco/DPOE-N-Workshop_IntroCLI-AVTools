@@ -136,6 +136,7 @@
         var commands = loadCommandsJSON();
         console.log(commands);
         window.onload = function(){
+            console.log(commands["commands"][0]);
             $('#commandName').innerHTML = commands["commands"][0]["commandName"];
             $('#commandOperation').innerHTML = commands["commands"][0]["commandOperation"];
             $('#commandFlags').innerHTML = commands["commands"][0]["commandFlags"];
@@ -148,8 +149,14 @@
             $('#commandFlags').innerHTML = commands["commands"][nextSubSlide]["commandFlags"];
             currentSubSlide = nextSubSlide;
         }
-        function prevSubSlide(){}
-	</script>
+function prevSubSlide(){
+            var nextSubSlide = currentSubSlide - 1;
+            $('#commandName').innerHTML = commands["commands"][prevSubSlide]["commandName"];
+            $('#commandOperation').innerHTML = commands["commands"][prevSubSlide]["commandOperation"];
+            $('#commandFlags').innerHTML = commands["commands"][prevSubSlide]["commandFlags"];
+            currentSubSlide = nextSubSlide;
+}
+    </script>
     </body>
 </html>
 
