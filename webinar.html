@@ -141,7 +141,13 @@
         }
         var commands = loadCommandsJSON();
         console.log(commands);
-		function nextSubSlide(){}
+window.onload = function(){
+    $(#commandName).innerHTML = commands["commands"][0]["commandName"];
+    $(#commandOperation).innerHTML = commands["commands"][0]["commandOperation"];
+    $(#commandFlags).innerHTML = commands["commands"][0]["commandFlags"];
+}
+        function nextSubSlide(){
+        }
 		function prevSubSlide(){}
 	</script>
     </body>
