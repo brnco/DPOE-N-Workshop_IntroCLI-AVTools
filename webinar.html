@@ -146,17 +146,17 @@
         function nextSubSlide(){
             var nextSubSlide = Number(currentSubSlide) + 1;
             console.log("nSS = " + nextSubSlide);
-            $('#commandName').html(commands["commands"][nextSubSlide]["commandName"]);
-            $('#commandOperation').html(commands["commands"][nextSubSlide]["commandOperation"]);
-            $('#commandFlags').html(commands["commands"][nextSubSlide]["commandFlags"]);
+            $('#commandName').empty().html(commands["commands"][nextSubSlide]["commandName"]);
+            $('#commandOperation').empty().html(commands["commands"][nextSubSlide]["commandOperation"]);
+            $('#commandFlags').empty().html(commands["commands"][nextSubSlide]["commandFlags"]);
             currentSubSlide = nextSubSlide;
         }
         function prevSubSlide(){
             var prevSubSlide = currentSubSlide - 1;
             console.log("pSS = " + prevSubSlide);
-            $('#commandName').html(commands["commands"][prevSubSlide]["commandName"]);
-            $('#commandOperation').html(commands["commands"][prevSubSlide]["commandOperation"]);
-            $('#commandFlags').html(commands["commands"][prevSubSlide]["commandFlags"]);
+            $('#commandName').empty().html(commands["commands"][prevSubSlide]["commandName"]);
+            $('#commandOperation').empty().html(commands["commands"][prevSubSlide]["commandOperation"]);
+            $('#commandFlags').empty().html(commands["commands"][prevSubSlide]["commandFlags"]);
             currentSubSlide = prevSubSlide;
 }
     </script>
