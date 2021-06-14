@@ -136,15 +136,19 @@
         var commands = loadCommandsJSON();
         console.log(commands);
         window.onload = function(){
-            $(#commandName).innerHTML = commands["commands"][0]["commandName"];
-            $(#commandOperation).innerHTML = commands["commands"][0]["commandOperation"];
-            $(#commandFlags).innerHTML = commands["commands"][0]["commandFlags"];
+            $('#commandName').innerHTML = commands["commands"][0]["commandName"];
+            $('#commandOperation').innerHTML = commands["commands"][0]["commandOperation"];
+            $('#commandFlags').innerHTML = commands["commands"][0]["commandFlags"];
         }
         var currentSubSlide = 0;
         function nextSubSlide(){
             var nextSubSlide = currentSubSlide + 1;
+            $('#commandName').innerHTML = commands["commands"][nextSubSlide]["commandName"];
+            $('#commandOperation').innerHTML = commands["commands"][nextSubSlide]["commandOperation"];
+            $('#commandFlags').innerHTML = commands["commands"][nextSubSlide]["commandFlags"];
+            currentSubSlide = nextSubSlide;
         }
-		function prevSubSlide(){}
+        function prevSubSlide(){}
 	</script>
     </body>
 </html>
