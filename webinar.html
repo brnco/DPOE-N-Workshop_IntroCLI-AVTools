@@ -136,7 +136,7 @@
         var commands = loadCommandsJSON();
         console.log(commands);
         window.onload = function(){
-            console.log(commands["commands"][0]);
+            console.log(commands["commands"][0]["commandName"]);
             $('#commandName').innerHTML = commands["commands"][0]["commandName"];
             $('#commandOperation').innerHTML = commands["commands"][0]["commandOperation"];
             $('#commandFlags').innerHTML = commands["commands"][0]["commandFlags"];
