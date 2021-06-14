@@ -1,0 +1,14 @@
+{
+    "commands":[
+        {
+            "commandName":"pwd",
+            "commandOperation":"print working directory",
+            "coimmandFlags":"none"
+        },
+        {
+            "commandName":"ls",
+            "commandOperation":"list contents of directory",
+            "commandFlags":"-a = all<br>-l = long format<br>-1 = one per line"
+        }
+    ]
+}
