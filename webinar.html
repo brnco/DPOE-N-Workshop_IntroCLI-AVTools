@@ -17,6 +17,12 @@
             .twoColContainer{
                 display: flex;
             }
+	    .colR{
+		    flex:2;
+	    }
+	    .colL{
+		    flex:1;
+	    }
         </style>
     </head>
     <body>
@@ -79,7 +85,7 @@
                 <section>
                     <h3>Testing Terminal Streaming</h3><br>
                     <div class="twoColContainer">
-			    <div class="r-stack col">
+			    <div class="r-stack colL">
 			    <div class="fragment fade-in-then-out">
 				    <h5>PWD</h5>
 				    "print working directory"<br>
@@ -94,7 +100,7 @@
 				    -1 = one per line
 			    </div>
 			    </div>
-			    <div class="col" style="boder:1px solid white">
+			    <div class="colR" style="boder:1px solid white">
 				    <iframe 
                              src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
                              width="100%"
