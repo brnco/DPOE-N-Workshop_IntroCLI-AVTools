@@ -82,16 +82,19 @@ If you don't have admin access on your Mac, you can still install Homebrew and t
 1. Open Terminal
   - type `Cmd + Space` to search your mac
   - type `terminal` and press enter
-2. In Terminal, naviagte to your home folder
+2. In Terminal, navigate to your home folder
   - type `cd ~/` and press enter
 3. install Homebrew in your home folder
-  - type `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and press enter
+  - type the below and press enter
+  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and press enter
 4. Once that command completes, go to Terminal -> Preferences -> Shell
   - In the "Startup" Section, check the box to "Run Command"
   - type this command into the box `export PATH=${HOME}/brew/bin`
   - Check the box to "Run inside shell"
 
-With either install method, you can check if your install was successful by opening Terminala dn typing `brew help` - if you get help output, you're good; if you get an error, email me.
+With either install method, you can check if your install was successful by opening Terminal and typing `brew help` - if you get help output, you're good; if you get an error, email me.
+
+Once you have installed Homebrew, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools) below
 
 ## Windows setup instructions
 
@@ -101,12 +104,13 @@ That being said, you are welcome to follow along in CMD and make the modificatio
 
 Otherwise, we’re going to install bash on your windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them.
 
-### Install WIndows Subsystem for Linux (WSL)
+### Install Windows Subsystem for Linux (WSL)
 
 To install WSL, follow [the instructions on the Microsoft website](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Here is a great video](https://www.youtube.com/watch?v=X-DHaQLrBi8) describing the steps, as well
 
+Once you have installed WSL, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools) below
 
 ## Install tools
 
@@ -131,9 +135,40 @@ Choose one of the following options
 OR
 
 `sudo add-apt-repository ppa:mc3man/trusty-media
+
 sudo apt-get update
+
 sudo apt-get dist-upgrade
+
 sudo apt-get install ffmpeg`
+
+### MediaInfo
+
+MediaInfo creates structured technical metadata from a variety of audiovisual media filetypes, everything from sample rates to listing subtitle tracks.
+
+#### Mac
+
+`brew install mediainfo`
+
+#### WSL
+
+`apt-get install mediainfo`
+
+### grabbags
+
+grabbags is a software tool maintained the Association of Moving Image Archivists Open Source Committee and it helps archivists manage bags in the manner of the Library of Congress’ BagIt specification.
+
+#### Mac
+
+`brew tap amiaopensource/amiaos
+
+brew install grabbags`
+
+#### WSL
+
+`cd ~/
+
+git clone https://github.com/amiaopensource/grabbags.git`
 
 # Acknowledgements
 
