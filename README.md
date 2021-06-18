@@ -55,6 +55,8 @@ These tools include:
 
 [Script Ahoy](https://dd388.github.io/crals/) - a bash helper for archivists by Dianne Dietrich and Jarret Drake
 
+[Bash for Archivsts](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
+
 [Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" (manual pages), describing the history and use of manual pages int he command line
 
 # Agenda
@@ -138,8 +140,6 @@ This software is installed entirely via the command line. Each command is writte
 
 ffmpeg is one of the most important and widely-used software projects on earth - it’s the backbone of Netflix and Facebook streaming services, as well as VLC. ffmpeg helps people stream, transcode, and investigate audiovisual media files.
 
-To install, type these commands into Terminal, hitting enter after each individual command
-
 #### Mac
 
 `brew install avpres/formulae/ffmpeg --with-openjpeg --with-rubberband --with-tesseract`
@@ -150,7 +150,7 @@ Choose one of the following options
 
 `apt-get install ffmpeg`
 
-OR
+Note that I haven't tested every functionality of the above ffmpeg build. There may be commands which won't work due to licensing issues with non-free formats (notably H.264 and mp3). The below build is ~probably better.
 
 `sudo add-apt-repository ppa:mc3man/trusty-media`
 
@@ -198,7 +198,7 @@ Juana Suarez, Jess Cayer, and the team at NYU MIAP - our gracious hosts who spen
 
 Nick Krabbenhoeft and Ben Turkus, who are doing the Day 2 of this series, an intro to Python
 
-Ashley Blewer, Dianne Dietrich, and Jarret Drake (mentioned above) - all permanent inspirations for my work
+Ashley Blewer, Dianne Dietrich, Jarret Drake, Reto Kromer - as mentioend above, these people don't just do good work they also share it
 
 Morgan Morel, my bud who helped brainstorm all this
 
