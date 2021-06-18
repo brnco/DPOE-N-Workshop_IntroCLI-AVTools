@@ -39,8 +39,6 @@ These tools include:
 
 [BagIt](https://datatracker.ietf.org/doc/html/rfc8493) + [grabbags](https://github.com/amiaopensource/grabbags)
 
-[xmllint](http://xmlsoft.org/xmllint.html)
-
 [MediaInfo](https://mediaarea.net/en/MediaInfo)
 
 [ffmpeg](http://ffmpeg.org/)
