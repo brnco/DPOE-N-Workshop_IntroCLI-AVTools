@@ -23,6 +23,8 @@ The presentation slides can be accessed at [this link](https://brnco.github.io/D
   - [Windows / WSL](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#windows-setup-instructions)
   - [Tools](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
 
+[Acknowledgements](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#acknowledgements)
+
 # Tools Covered
 
 While not an exhaustive list, the webinar will touch on some fundamental software to managing digital files, with an emphasis on audiovisual formats.
@@ -146,7 +148,7 @@ To install, type these commands into Terminal, hitting enter after each individu
 
 Choose one of the following options
 
-`apt-get isntall ffmpeg`
+`apt-get install ffmpeg`
 
 OR
 
