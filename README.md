@@ -9,6 +9,20 @@ The official website for this webinar is located at [this link](https://www.dpoe
 
 The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
 
+# Table of Contents
+
+[Tools list](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#tools-covered)
+
+[Readings and Resources](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#readings--resources)
+
+[Agenda](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#agenda)
+
+[Install Instructions](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-instructions)
+
+  - [Mac / Homebrew](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#mac-setup-instructions)
+  - [Windows / WSL](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#windows-setup-instructions)
+  - [Tools](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
+
 # Tools Covered
 
 While not an exhaustive list, the webinar will touch on some fundamental software to managing digital files, with an emphasis on audiovisual formats.
@@ -102,7 +116,7 @@ This workshop is based on the BASH programming language/ shell, which is not ava
 
 That being said, you are welcome to follow along in CMD and make the modifications necessary, if you’d like.
 
-Otherwise, we’re going to install bash on your windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them.
+Otherwise, we’re going to install bash on your Windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them.
 
 ### Install Windows Subsystem for Linux (WSL)
 
