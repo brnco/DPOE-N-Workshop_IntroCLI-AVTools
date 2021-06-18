@@ -134,13 +134,13 @@ Choose one of the following options
 
 OR
 
-`sudo add-apt-repository ppa:mc3man/trusty-media
+`sudo add-apt-repository ppa:mc3man/trusty-media`
 
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get dist-upgrade
+`sudo apt-get dist-upgrade`
 
-sudo apt-get install ffmpeg`
+`sudo apt-get install ffmpeg`
 
 ### MediaInfo
 
@@ -160,9 +160,9 @@ grabbags is a software tool maintained the Association of Moving Image Archivist
 
 #### Mac
 
-`brew tap amiaopensource/amiaos
+`brew tap amiaopensource/amiaos`
 
-brew install grabbags`
+`brew install grabbags`
 
 #### WSL
 
