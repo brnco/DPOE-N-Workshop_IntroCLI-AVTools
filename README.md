@@ -55,7 +55,7 @@ These tools include:
 
 [Script Ahoy](https://dd388.github.io/crals/) - a bash helper for archivists by Dianne Dietrich and Jarret Drake
 
-[Bash for Archivsts](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
+[Bash for Archivists](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
 
 [Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" (manual pages), describing the history and use of manual pages int he command line
 
