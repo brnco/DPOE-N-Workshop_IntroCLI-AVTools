@@ -166,9 +166,9 @@ grabbags is a software tool maintained the Association of Moving Image Archivist
 
 #### WSL
 
-`cd ~/
+`cd ~/`
 
-git clone https://github.com/amiaopensource/grabbags.git`
+`git clone https://github.com/amiaopensource/grabbags.git`
 
 # Acknowledgements
 
