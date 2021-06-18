@@ -116,6 +116,8 @@ Once you have installed WSL, proceed to the [tools install section](https://gith
 
 This section assumes that you have completed the above steps to install Homebrew/ WSL
 
+This software is installed entirely via the command line. Each command is written on its own line and will appear formatted `like this`. Type the command in exactly as you see it here and press enter after each command.
+
 ### ffmpeg
 
 ffmpeg is one of the most important and widely-used software projects on earth - it’s the backbone of Netflix and Facebook streaming services, as well as VLC. ffmpeg helps people stream, transcode, and investigate audiovisual media files.
