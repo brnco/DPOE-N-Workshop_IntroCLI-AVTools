@@ -41,7 +41,18 @@
                 position:relative;
             }
             .colR img{
-                /*max-width:200px;*/
+                object-fit:contain;
+            }
+            .colLEven{
+                flex:1;
+                position:relative;
+                text-align:left;
+            }
+            .colREven{
+                flex:1;
+                position:relative;
+            }
+            .colREven img{
                 object-fit:contain;
             }
         </style>
@@ -254,7 +265,8 @@
                      <div class="r-stack colLCLI">
                        <div class="fragment fade-in-then-out">
                          <h3>echo</h3>
-                         print to terminal
+                         print to terminal<br>
+                         text -> stdout
                        </div>
                       <div class="fragment fade-in-then-out">
                         <h3>stdin</h3>
@@ -279,7 +291,8 @@
                       <div class="fragment fade-in-then-out">
                           <h3>&&</h3>
                           sequence commands<br>
-                          only runs 2nd command if 1st command successful
+                          only runs cmd2 IF<br>
+                          cmd1 successful
                       </div>
                       <div class="fragment fade-in-then-out">
                           <h3>touch</h3>
@@ -288,12 +301,12 @@
                       <div class="fragment fade-in-then-out">
                           <h3>cat</h3>
                           con"cat"enate files<br>
-                          reads files to stadout
+                          reads files to stdout
                       </div>
                       <div class="fragment fade-in-then-out">
                           <h3>all together</h3>
                           breakout rooms<br>
-                          1. write to a text file
+                          1. write to a text file<br>
                           2. write dir contents
                       </div>
                      </div>
@@ -308,6 +321,113 @@
                 </div>
               </div>
             </section>
+            <section>
+              <h1>lunch</h1>
+              see you in an hr!
+            </section>
+            <section>
+              <h1>CLI for DigiPres</h1>
+              moving files<br>
+              doing hashes<br>
+              BagIt
+            </section>
+            <section>
+                <h2>Moving Files</h2><br>
+                <div class="twoColContainer">
+                     <div class="r-stack colLCLI">
+                       <div class="fragment fade-in-then-out">
+                         <h3>cp</h3>
+                         "copy"<br>
+                         flags:<br>
+                         -a = timestamps<br>
+                         -i/n = interactive/not<br>
+                         -v = verbose
+                       </div>
+                      <div class="fragment fade-in-then-out">
+                        <h3>mv</h3>
+                        "move"<br>
+                        renames files/paths<br>
+                        flags:<br>
+                        -i/n = interactive/not
+                      </div>
+                      <div class="fragment fade-in-then-out">
+                        <h3>mkdir</h3>
+                        "make directory"<br>
+                        flags:<br>
+                        -p = parents<br>
+                        -v = verbose
+                      </div>
+                      <div class="fragment fade-in-then-out">
+                        <h3>rsync</h3>
+                        sync files/ dirs<br>
+                        flags:<br>
+                        -a = archive mode<br>
+                        -v = verbose<br>
+                        -z = compress<br>
+                        -x = extended attrs
+                      </div>
+                      <div class="fragment fade-in-then-out">
+                        <h3>rsync</h3>
+                        flags:<br>
+                        --progress<br>
+                        --logfile=path<br>
+                        --exclude
+                      </div>
+                     </div>
+              <div class="colRCLI">
+                <iframe
+                 src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
+                 width="100%"
+                 height="100%"
+                 allowfullscreen="true"
+                 autoplay="false">
+                </iframe>
+                </div>
+              </div>
+            </section>
+            <section>
+                <h2>Checksums</h2><br>
+                <div class="twoColContainer">
+                  <div class="colLEven">
+                    <h3>Hashes</h3>
+                    break file into blocks<br>
+                    read blocks + compute hash<br>
+                    check full file hash
+                  </div>
+                  <div class="colREven">
+                    <h3>CRC</h3>
+                    break file into blocks<br>
+                    read blocks + compute hash<br>
+                    check block hashes +<br>
+                    block position
+                  </div>
+                 <div class="r-stack colLCLI">
+                   <div class="fragment fade-in-then-out">
+                     <h3>md5sum</h3>
+                     generate MD5 hash<br>
+                     flags:<br>
+                     -c = check files
+                   </div>
+                  <div class="fragment fade-in-then-out">
+                    <h3>shasum</h3>
+                    generate SHA hash<br>
+                    flags:<br>
+                    -a = algorithm<br>
+                    -p = portable<br>
+                    -c = check files
+                  </div>
+                 </div>
+                 <div class="colRCLI">
+                  <iframe
+                   src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
+                   width="100%"
+                   height="100%"
+                   allowfullscreen="true"
+                   autoplay="false">
+                  </iframe>
+            </div>
+          </div>
+          </section>
             </div><!-- end of <div class=slides> -->
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
