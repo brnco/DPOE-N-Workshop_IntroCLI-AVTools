@@ -516,10 +516,47 @@
           <section>
             <h1>Scripting</h1>
             <section>
-              <div class="twoColContainer">
-              </div>
+            putting everything together
             </section>
+            <section>
+            <h3>CLI scripting</h3>
+            <div class="twoColContainer">
+             <div class="r-stack colLCLI">
+               <div class="fragment fade-out">
+                 <h3>find -exec</h3>
+                 execute a command<br>
+                 on output of find
+               </div>
+               <div class="fragment fade-out">
+                 <h3>FOR loops</h3>
+                 iterate through something<br>
+                 loop thru directory
+               </div>
+              <div class="fragment fade-in-then-out">
+                <h3>variables</h3>
+                variable=value<br>
+                ${variable} - deploy it<br>
+              </div>
+              <div class="fragment fade-in-then-out">
+                <h3>variable substitution</h3>
+                file="/path/to/file.mkv"<br>
+                ${file%/.} = ?<br>
+                ${file%.mkv}.mp4 = ?<br>
+              </div>
+             </div>
+             <div class="colRCLI">
+              <iframe
+               src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
+               width="100%"
+               height="100%"
+               allowfullscreen="true"
+               autoplay="false">
+              </iframe>
+            </div>
+          </div>
           </section>
+          </section>
+
           </div><!-- end of <div class=slides> -->
           </div><!-- enf of <div class="reveal.js"> -->
         <script src="reveal.js/dist/reveal.js"></script>
