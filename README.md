@@ -1,13 +1,12 @@
 # DPOE-N-Workshop_IntroCLI-AVTools
-for the 2021-06-24 Intro to CLI and AV Tools Workshop by DPOE-N
 
 # Overview
 
-This single-day free webinar provides an introduction to the command line interface (CLI) and a few tools for digital preservation with a focus on audiovisual assets. It's provided by the Digital Preservation Outreach & Education Network (DPOE-N), part of PRatt University and New York University's Moving Image Archiving Program (MIAP).
+This single-day free webinar provides an introduction to the command line interface (CLI) and a few tools for digital preservation with a focus on audiovisual assets. It's provided by the Digital Preservation Outreach & Education Network (DPOE-N), part of the Pratt Institute's School of Information and New York University's Moving Image Archiving Program (MIAP).
 
 The official website for this webinar is located at [this link](https://www.dpoe.network/workshops/)
 
-The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
+The presentation slides (under construction) can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
 
 # Table of Contents
 
@@ -55,7 +54,7 @@ These tools include:
 
 [Bash for Archivists](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
 
-[Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" (manual pages), describing the history and use of manual pages int he command line
+[Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" aka manual pages, describing the history and use of manual pages in the command line
 
 # Agenda
 
@@ -89,6 +88,8 @@ Macs ship with an application named “Terminal” which is their default comman
 
 We will be using something called a “package manager” to install the software tools we’re demo-ing. Package managers help people manage their software without the use of “installers” like you might be used to, they’re very common on Linux.
 
+Once you have installed the package manager, Homebrew, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
+
 ### Install Homebrew
 
 For Mac, the package manager we’ll be using is called Homebrew. If you have administrative access to your machine, you can install homebrew with [the steps on their website](https://brew.sh) (it’s a Terminal command).
@@ -110,7 +111,6 @@ If you don't have admin access on your Mac, you can still install Homebrew and t
 
 With either install method, you can check if your install was successful by opening Terminal and typing `brew help` - if you get help output, you're good; if you get an error, email me.
 
-Once you have installed Homebrew, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools) below
 
 ## Windows setup instructions
 
@@ -120,13 +120,15 @@ That being said, you are welcome to follow along in CMD and make the modificatio
 
 Otherwise, we’re going to install bash on your Windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them.
 
+With WSL installed, we will then use the Ubuntu Linux package manager, apt-get, to install software.
+
+Once you have installed WSL, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
+
 ### Install Windows Subsystem for Linux (WSL)
 
 To install WSL, follow [the instructions on the Microsoft website](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Here is a great video](https://www.youtube.com/watch?v=X-DHaQLrBi8) describing the steps, as well
-
-Once you have installed WSL, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools) below
 
 ## Install tools
 
@@ -196,7 +198,7 @@ Juana Suarez, Jess Cayer, and the team at NYU MIAP - our gracious hosts who spen
 
 Nick Krabbenhoeft and Ben Turkus, who are doing the Day 2 of this series, an intro to Python
 
-Ashley Blewer, Dianne Dietrich, Jarret Drake, Reto Kromer - as mentioend above, these people don't just do good work they also share it
+Ashley Blewer, Dianne Dietrich, Jarret Drake, Reto Kromer - as mentioned above, these people don't just do good work they also share it
 
 Morgan Morel, my bud who helped brainstorm all this
 
