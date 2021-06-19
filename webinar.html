@@ -17,20 +17,22 @@
             .twoColContainer{
                 display: flex;
             }
-	    .colR{
-		    flex:2;
-	    }
-	    .colL{
-		    flex:1;
-		    text-align:left;
-		    font-size:80%;
-		    top:0;
-		    position:relative;
-	    }
-	    .colL h5{
-		    text-align: center;
-		    text-transform: lowercase;
-	    }
+	        .colRCLI{
+		        flex:2;
+	        }
+	        .colLCLI{
+		        flex:1;
+		        text-align:left;
+		        font-size:80%;
+		        top:0;
+		        position:relative;
+	        }
+	        .colLCLI h5{
+		        text-align: center;
+		        text-transform: lowercase;
+	        }
+            .colL{flex:2;}
+            .colR{flex:1;}
         </style>
     </head>
     <body>
@@ -94,9 +96,44 @@
                     </section>
                 </section>
                 <section>
+                    <h3>Overview</h3><br>
+                    what are we doing here?<br>
+                    what is "open source"?<br>
+                </section>
+                <section>
+                    <h3>Introductions</h3><br>
+                    What's your name/ pronouns/ location?<br>
+                    What do you do for work?<br>
+                    What do you do for fun?<br>
+                    What's 1 thing that brought you here?
+                </section>
+                <section>
+                        <h3>What is the command line?</h3><br>
+                        <section>    
+                            <div class="colL"> 
+                                <h5>History</h5><br>
+                                "terminals" connected you to a computer<br>
+                                UNIX:Bourne shell | GNU/Linux:BASH<br>
+                                This technology stack is >30yrs old
+                            </div>
+                            <div class="colR">
+                                <!-- image goes here -->
+                            </div>
+                        </section>
+                        <section>
+                            <div class="colL">
+                                <h5>Modern Use</h5><br>
+                                "terminal emulator"
+                            </div>
+                            <div class="colR">
+                                <!-- image goes here -->
+                            </div>
+                        </section>
+                </section>
+                <section>
                     <h3>Navigation</h3><br>
                     <div class="twoColContainer">
-			    <div class="r-stack colL">
+			    <div class="r-stack colLCLI">
 			    <div class="fragment fade-in-then-out">
 				    <h5>PWD</h5>
 				    "print working directory"<br><br>
@@ -118,7 +155,7 @@
 				    .. = parent directory
 			    </div>
 			    </div>
-			    <div class="colR">
+			    <div class="colRCLI">
 				    <iframe 
                              src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
                              width="100%"
