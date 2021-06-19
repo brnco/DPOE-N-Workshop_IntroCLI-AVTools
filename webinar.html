@@ -197,45 +197,6 @@
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
             });
         </script>
-	<script>
-        console.log("script!");
-        function loadCommandsJSON(){
-            $.ajax({
-                'async': false,
-                'global': false,
-                'url': "subslides.json",
-                'dataType': "json",
-                'success': function (data) {
-                    json = data;
-                }});
-            return json;
-        }
-        var commands = loadCommandsJSON();
-        console.log(commands);
-        window.onload = function(){
-            console.log(commands["commands"][0]["commandName"]);
-            $('#commandName').html(commands["commands"][0]["commandName"]);
-            $('#commandOperation').html(commands["commands"][0]["commandOperation"]);
-            $('#commandFlags').html(commands["commands"][0]["commandFlags"]);
-        }
-        var currentSubSlide = 0;
-        function nextSubSlide(){
-            var nextSubSlide = Number(currentSubSlide) + 1;
-            console.log("nSS = " + nextSubSlide);
-            $('#commandName').empty().html(commands["commands"][nextSubSlide]["commandName"]);
-            $('#commandOperation').empty().html(commands["commands"][nextSubSlide]["commandOperation"]);
-            $('#commandFlags').empty().html(commands["commands"][nextSubSlide]["commandFlags"]);
-            currentSubSlide = nextSubSlide;
-        }
-        function prevSubSlide(){
-            var prevSubSlide = currentSubSlide - 1;
-            console.log("pSS = " + prevSubSlide);
-            $('#commandName').empty().html(commands["commands"][prevSubSlide]["commandName"]);
-            $('#commandOperation').empty().html(commands["commands"][prevSubSlide]["commandOperation"]);
-            $('#commandFlags').empty().html(commands["commands"][prevSubSlide]["commandFlags"]);
-            currentSubSlide = prevSubSlide;
-}
-    </script>
     </body>
 </html>
 
