@@ -82,6 +82,10 @@ workflow setup, variables, loops, managing scripts
 
 # Install instructions
 
+## Test Files
+
+Please download a set of test file sthat you'll use for both days 1 and 2 [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
+
 ## Mac Setup Instructions
 
 Macs ship with an application named “Terminal” which is their default command line interface. It will work great for this webinar, you may even see me using at some point.
@@ -142,7 +146,7 @@ ffmpeg is one of the most important and widely-used software projects on earth -
 
 #### Mac
 
-`brew install avpres/formulae/ffmpeg --with-openjpeg --with-rubberband --with-tesseract`
+`brew install ffmpeg`
 
 #### WSL
 
