@@ -106,7 +106,7 @@ If you don't have admin access on your Mac, you can still install Homebrew and t
   - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and press enter
 4. Once that command completes, go to Terminal -> Preferences -> Shell
   - In the "Startup" Section, check the box to "Run Command"
-  - type this command into the box `export PATH=${HOME}/brew/bin`
+  - type this command into the box `export PATH=$PATH:${HOME}/brew/bin`
   - Check the box to "Run inside shell"
 
 With either install method, you can check if your install was successful by opening Terminal and typing `brew help` - if you get help output, you're good; if you get an error, email me.
