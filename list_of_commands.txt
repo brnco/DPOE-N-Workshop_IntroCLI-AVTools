@@ -1,0 +1,17 @@
+pwd = print working directory
+cd = change directory
+cd ~/ = change to my home directory
+ls = list directory contents
+ls -la = list all contents (including hidden files) in long format
+pushd|popd = cd but remember the initial directory
+whereis = find all (binary) files with name (e.g. whereis python)
+which = which binary am i using to run a command (e.g. which python)
+find = list directory and subdirectory contents
+find -type d = list contents of type directory
+find -name *.mp3 = list all mp3 files in directory and subdirectories
+
+id = list user info
+
+echo = print to terminal
+touch = write blank text file
+cat = display contents of file, as text (e.g. cat ~/.bashrc)
