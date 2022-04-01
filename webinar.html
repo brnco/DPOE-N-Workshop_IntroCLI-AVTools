@@ -179,8 +179,10 @@
                             <h3>Stopping commands</h3>
                             <div class="twoColContainer">
                                 <div class="colLCLI">
-                                    <code>Ctl+c</code> stop<br>
-                                    <code>Ctl+z</code> kill
+                                    Stop current process:<br>
+                                    <code>Ctl+c</code><br>
+                                    Really stop (kill) current process:<br>
+                                    <code>Ctl+z</code><br>
                                 </div>
                                 <div class="colRCLI">
                                 <iframe
@@ -189,8 +191,8 @@
                                 height="100%"
                                 allowfullscreen="true"
                                 autoplay="false">
-                               </iframe>
-                               </div>
+                                </iframe>
+                                </div>
                            </div>
                        </section>
                        <section>
@@ -207,71 +209,66 @@
                 <section>
                     <h2>Navigation</h2><br>
                     <div class="twoColContainer">
-			                   <div class="r-stack colLCLI">
-    			                <div class="fragment fade-in-then-out">
-        				                <h3>PWD</h3>
-        				                "print working directory"<br><br>
-        				                no flags for this
-    			                </div>
-    			                <div class="fragment fade-in-then-out">
-        				                <h3>LS</h3>
-                                "list" contents<br><br>
-        				                flags:<br>
-        				                -a = all<br>
-        				                -l = long format<br>
-        				                -1 = one per line
-    			                </div>
-    			                <div class="fragment fade-in-then-out">
-        				                <h3>cd</h3>
-                                "change directory"<br><br>
-        				                special arguments:<br>
-        				                ~ = home folder<br>
-        				                .. = parent directory
-    			                </div>
-                          <div class="fragment fade-in-then-out">
+			            <div class="r-stack colLCLI">
+    			            <div class="fragment fade-in-then-out">
+        				        <h3>PWD</h3>
+        				            "print working directory"<br><br>
+        				            no flags for this
+    			            </div>
+    			            <div class="fragment fade-in-then-out">
+        				        <h3>LS</h3>
+                                    "list" contents<br><br>
+        				            key flags:<br>
+                                    <code>-a</code> = all<br>
+                                    <code>-l</code> = long format<br>
+                                    <code>-1</code> = one per line
+                                    example: <code>ls -la</code>
+    			            </div>
+    			            <div class="fragment fade-in-then-out">
+        				        <h3>cd</h3>
+                                    "change directory"<br><br>
+        				            key arguments:<br>
+                                    <code>~/</code> = home folder<br>
+                                    <code>..</code> = parent directory
+                                    <code>-</code> = previous directory
+                                    example: <code>cd /Volumes/HardDrive</code>
+    			            </div>
+                            <div class="fragment fade-in-then-out">
                                 <h3>paths</h3>
-                                absolute paths<br>
-                                from drive to file<br><br>
-                                relative paths<br>
-                                relative to where you are, now<br>
-                          </div>
-    			                <div class="fragment fade-in-then-out">
-                                <h3>pushd | popd</h3>
-                                like cd but:<br>
-                                saves current dir<br>
-                          </div>
-    			                <div class="fragment fade-in-then-out">
-                                <h3>whereis</h3>
-                                search environment variables<br><br>
-                                find where commands are installed<br>
-                          </div>
-    			                <div class="fragment fade-in-then-out">
-                                <h3>which</h3>
-                                display command location<br>
-                          </div>
-    			                <div class="fragment fade-in-then-out">
+                                    absolute paths<br>
+                                    from drive to file<br><br>
+                                    relative paths<br>
+                                    relative to where you are, now<br>
+                            </div>
+    			            <div class="fragment fade-in-then-out">
+                                <h3>whereis and which</h3>
+                                    return path of search "term"<br><br>
+                                    find installation paths of command<br>
+                            </div>
+    			            <div class="fragment fade-in-then-out">
                                 <h3>find</h3>
-                                like ls but better<br>
-                                flags:<br>
-                                -type<br>
-                                -name<br>
-                                -iname
-                          </div>
-    			                <div class="fragment fade-in-then-out">
+                                    like ls but better<br>
+                                    key flags:<br>
+                                    <code>-type</code><br>
+                                    <code>-name</code><br>
+                                    example: <code>find . -type d -name logs</code>
+                            </div>
+    			            <div class="fragment fade-in-then-out">
                                 <h3>find</h3>
-                                more flags:<br>
-                                -and<br>
-                                -or<br>
-                                * = wildcard
-                          </div>
-			                   </div>
-  		            <div class="colRCLI">
-        				    <iframe
-                     src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
-                     width="100%"
-                     height="100%"
-                     allowfullscreen="true"
-                     autoplay="false">
+                                    more flags:<br>
+                                    <code>-and</code><br>
+                                    <code>-or</code><br>
+                                    <code>*</code>
+                                    example: <code>find ~/ *.jpg</code>
+                            </div>
+			            </div>
+  		                <div class="colRCLI">
+        			        <iframe
+                            src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
+                            width="100%"
+                            height="100%"
+                            allowfullscreen="true"
+                            autoplay="false">
         				    </iframe>
   			            </div>
   		            </div>
