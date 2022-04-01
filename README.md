@@ -8,7 +8,7 @@ This single-day free webinar provides an introduction to the command line interf
 
 The official website for this webinar is located at [this link](https://www.dpoe.network/workshops/)
 
-The presentation slides (under construction) can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
+The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
 
 # Table of Contents
 
