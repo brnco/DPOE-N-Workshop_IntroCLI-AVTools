@@ -1,18 +1,18 @@
-# DPOE-N-Workshop_IntroCLI-AVTools
-
-each year's presentation is on its own branch
+# DPOE-N-Workshop_IntroCLI
 
 # Overview
 
 This single-day free webinar provides an introduction to the command line interface (CLI) and a few tools for digital preservation with a focus on audiovisual assets. It's provided by the Digital Preservation Outreach & Education Network (DPOE-N), part of the Pratt Institute's School of Information and New York University's Moving Image Archiving Program (MIAP).
 
-The official website for this webinar is located at [this link](https://www.dpoe.network/workshops/)
+See [this link](https://www.dpoe.network/workshops/) for more info about DPOE-N workshops
 
 The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
 
 # Table of Contents
 
-[Tools list](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#tools-covered)
+[Course Description](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#course-description)
+
+[Tools list](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#command-line-software-discussed)
 
 [Readings and Resources](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#readings--resources)
 
@@ -24,9 +24,13 @@ The presentation slides can be accessed at [this link](https://brnco.github.io/D
   - [Windows / WSL](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#windows-setup-instructions)
   - [Tools](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
 
+[Presenter Bio](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#presenter-bio)
+
 [Acknowledgements](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#acknowledgements)
 
-# Tools Covered
+# Course Description
+
+# Command-Line Software Discussed
 
 While not an exhaustive list, the webinar will touch on some fundamental software to managing digital files, with an emphasis on audiovisual formats.
 
@@ -50,11 +54,11 @@ These tools include:
 
 [Heroes in a Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell) by Command Line Heroes
 
-[ffmprovisr](https://amiaopensource.github.io/ffmprovisr/) - an ffmpeg helper maintained by [Ashley Blewer](https://ashleyblewer.com/)
-
 [Script Ahoy](https://dd388.github.io/crals/) - a bash helper for archivists by Dianne Dietrich and Jarret Drake
 
 [Bash for Archivists](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
+
+[ffmprovisr](https://amiaopensource.github.io/ffmprovisr/) - an ffmpeg helper maintained by [Ashley Blewer](https://ashleyblewer.com/)
 
 [Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" aka manual pages, describing the history and use of manual pages in the command line
 
@@ -193,6 +197,10 @@ grabbags is a software tool maintained the Association of Moving Image Archivist
 `cd ~/`
 
 `git clone https://github.com/amiaopensource/grabbags.git`
+
+# Presenter Bio
+
+Brendan Coates is a gardener, musician, proud cat-parent, and member of the Los Angeles Tenants Union. He has been working to ensure the long-term stability and relevance of archival audiovisual materials since 2011, with a particular focus on oral histories, for which he's contributed to programs at The Academy of Motion Picture Arts and Sciences, The History Makers, and, currently, at the Computer History Museum. His background with historical AV also led him to the UCSB Library, where he headed the Special Research Collections digitization lab for four years, contributing to their cylinder program and The National Jukebox projects, among others. A lifelong interest in computers and aversion to boring work inspired him to start learning Bash and Python and integrating them into his professional life, and he's just been on that path ever since. He's a graduate of the University of Michigan's School of Information (#HailToTheVictims), a winner of the James A. Lindner Prize for [QCT-Parse](https://github.com/FutureDays/qct-parse), a winner of the IGF Nuovo Award with [Cassie McQuater](http://cassiemcquater.com/) for his contribution to her web game [Black Room](https://cass.itch.io/blackroom), and an active member of The Association for Moving Image Archivists ([AMIA](https://amianet.org/)) and the Oral History Association's Archives Interest Group ([OHAAIG](https://www.oralhistory.org/oha-archives-interest-group-oha-aig/)).
 
 # Acknowledgements
 
