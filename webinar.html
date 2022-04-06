@@ -14,7 +14,7 @@
             p {
                 text-align: left;
             }
-            .subheadline{
+            .subheading{
                 text-align:center;
             }
             .twoColContainer{
@@ -225,21 +225,21 @@
 			            <div class="r-stack colLCLI">
     			            <div class="fragment fade-in-then-out">
         				        <h3>PWD</h3>
-        				            "print working directory"<br><br>
+                                <div class="subheading">"print working directory"</div><br><br>
         				            no flags for this
     			            </div>
     			            <div class="fragment fade-in-then-out">
         				        <h3>ls</h3>
-                                    "list" contents<br><br>
+                                <div class="subheading">"list" contents</div><br><br>
         				            key flags:<br>
                                     <code>-a</code> = all<br>
                                     <code>-l</code> = long format<br>
                                     <code>-1</code> = one per line<br>
-                                    example: <code>ls -la</code>
+                                    
     			            </div>
     			            <div id="cd" class="fragment fade-in-then-out">
         				        <h3>cd</h3>
-                                <div class="subheadline">"change directory"</div><br>
+                                <div class="subheading">"change directory"</div><br>
         				            key arguments:<br>
                                     <code>~/</code> = home folder<br>
                                     <code>..</code> = parent directory<br>
@@ -259,12 +259,10 @@
                             </div>
     			            <div class="fragment fade-in-then-out">
                                 <h3>find</h3>
-                                    like <code>ls</code> but better<br>
+                                <div class="subheading">like <code>ls</code> but better</div><br>
                                     key flags:<br>
                                     <code>-type</code><br>
-                                    <code>-name</code><br><br><br><br><br>
-                                    example:<br>
-                                    <code>find . -type d -name logs</code>
+                                    <code>-name</code>
                             </div>
     			            <div class="fragment fade-in-then-out">
                                 <h3>find</h3>
@@ -272,7 +270,6 @@
                                     <code>-and</code><br>
                                     <code>-or</code><br>
                                     <code>*</code><br>
-                                    example: <code>find ~/ *.jpg</code>
                             </div>
 			            </div>
   		                <div class="colRCLI">
@@ -634,6 +631,7 @@
           </div><!-- end of <div class="reveal.js"> -->
         <script>
             var example_command = "$ cd /Volumes/HardDrive";
+            var example_command = "find . -type d -name logs";
             var example_block = "<code>" + example_command + "</code>";
             $("section").append(example_block).css("text-align","left");
         </script>
