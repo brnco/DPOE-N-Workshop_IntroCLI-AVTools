@@ -643,21 +643,23 @@
             });
         </script>
         <script>
-            var cmdwrap_pre = '<div class="example_command"><code>'
-            var cmdwrap_post = '</code></div>'
+            var cmdwrap_pre = '<div class="example_command">';
+            var cmdwrap_post = '</div>';
+            $("section").append(cmd_div);
             Reveal.on('fragmentshown', event => {
                             console.log("yeah");
                             if(event.fragment.id === "cd") {
-                                            example_command = "cd /Volumes/HardDrive')
-                                        } else if(event.fragment.id === "ls"){
-                                                        example_command = "ls -al<br>ls -1 /mnt/HardDrive";
-                                                        cmd_div = cmdwrap_pre + example_command + cmdwrap_post;
-                                                    }
-                            $("section").append(cmd_div);
-                        });
-            Reveal.on('fragmenthidden', event => {
-                            $(".example_command").css({"visibility":"hidden";})
-                        });
+                                example_command = "cd /Volumes/HardDrive");
+                            } else if(event.fragment.id === "ls"){
+                                cmd = "ls -al<br>ls -1 /mnt/HardDrive";
+                            } else {
+                                cmd = "";
+                            }
+                            $(".example_command").inner(cmd);
+            });
+            //Reveal.on('fragmenthidden', event => {
+            //                $(".example_command").css({"visibility":"hidden";})
+            //            });
         </script>
     </body>
 </html>
