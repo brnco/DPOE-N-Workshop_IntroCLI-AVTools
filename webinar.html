@@ -226,7 +226,7 @@
                                     "print working directory"<br><br>
         				            no flags for this
     			            </div>
-    			            <div class="hasExample fragment fade-in-then-out">
+    			            <div id="ls" class="hasExample fragment fade-in-then-out">
         				        <h3>ls</h3>
                                     "list" contents<br><br>
         				            key flags:<br>
@@ -630,7 +630,7 @@
             var example_command = "$ cd /Volumes/HardDrive";
             var example_command = "find . -type d -name logs";
             var example_block = "<code>" + example_command + "</code>";
-            $(".hasExample").append(example_block).css({"text-align":"left","font-size":"80%"});
+            //$(".hasExample").append(example_block).css({"text-align":"left","font-size":"80%"});
         </script>
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
@@ -641,6 +641,14 @@
                 hash: true,
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
             });
+        </script>
+        <script>
+        Reveal.on('fragmentshown', event => {
+            console.log("yeah");
+            if(event.fragment.id === "cd") {
+                $(".twoColContainer").append("<code>cd /Volumes/HardDrive</code>").css({"text-align":"left","font-size":"80%"})
+            }
+        });
         </script>
     </body>
 </html>
