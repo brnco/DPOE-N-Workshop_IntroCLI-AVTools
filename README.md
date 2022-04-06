@@ -1,22 +1,22 @@
-# DPOE-N-Workshop_IntroCLI-AVTools
-
-each year's presentation is on its own branch
+# DPOE-N-Workshop_IntroCLI
 
 # Overview
 
 This single-day free webinar provides an introduction to the command line interface (CLI) and a few tools for digital preservation with a focus on audiovisual assets. It's provided by the Digital Preservation Outreach & Education Network (DPOE-N), part of the Pratt Institute's School of Information and New York University's Moving Image Archiving Program (MIAP).
 
-The official website for this webinar is located at [this link](https://www.dpoe.network/workshops/)
+See [this link](https://www.dpoe.network/workshops/) for more info about DPOE-N workshops
 
 The presentation slides can be accessed at [this link](https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html)
 
 # Table of Contents
 
-[Tools list](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#tools-covered)
+[Course Description](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#course-description)
+
+[Agenda](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#agenda)
 
 [Readings and Resources](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#readings--resources)
 
-[Agenda](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#agenda)
+[Tools list](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#command-line-software-discussed)
 
 [Install Instructions](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-instructions)
 
@@ -24,9 +24,39 @@ The presentation slides can be accessed at [this link](https://brnco.github.io/D
   - [Windows / WSL](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#windows-setup-instructions)
   - [Tools](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
 
+[Presenter Bio](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#presenter-bio)
+
 [Acknowledgements](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#acknowledgements)
 
-# Tools Covered
+# Course Description
+
+With the ever-increasing scale and complexity of digital archival collections, archivists need to adapt their tools, workflows, and processes to match. While every institutional context is different, there are often opportunities to employ open source and command line tools to meet these challenges. Among the many benefits of utilizing the command line, the two most immediate tend to be: increased reliability of processes and more interesting work for archivists. 
+
+This 4-hour workshop will cover the basics of the command line interface (CLI) with a focus on its use in audiovisual archival workflows and digital preservation. The command line software discussed will help archivists navigate their terminals, find/ move/ rename digital objects, understand checksums and CRCs, create Bags per the BagIt specification, and introduce principles of scripting and automation for handling file data at scale.
+
+This is an introductory course and users with no programming or command line experience are welcome; any archivist who routinely moves files, verifies metadata across systems, or works with audiovisual materials will learn techniques to improve their efficiency and gain familiarity with systems and workflows which take advantage of CLI capabilities. Users don't need to have administrative privileges or the ability to install software on their local machines in order to participate. For users who can install software on their machines, there will be office hours prior to the workshop to go over any questions that arise as part of the setup (and instructions are provided [at this link](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-instructions)).
+
+# Agenda
+
+## Part 1 - History, Context, Objectives
+
+what the command line is, what we can do with it, why it matters
+
+## Part 2 - Intro to Commands
+
+basic structures, navigation, inputs & outputs
+
+## LUNCH
+
+## Part 3 - CLI Tools for Digital Preservation
+
+moving files, verifying integrity of files and metadata
+
+## Part 4 - Intro to Scripting
+
+workflow setup, loops, managing scripts
+
+# Command-Line Software Discussed
 
 While not an exhaustive list, the webinar will touch on some fundamental software to managing digital files, with an emphasis on audiovisual formats.
 
@@ -50,43 +80,19 @@ These tools include:
 
 [Heroes in a Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell) by Command Line Heroes
 
-[ffmprovisr](https://amiaopensource.github.io/ffmprovisr/) - an ffmpeg helper maintained by [Ashley Blewer](https://ashleyblewer.com/)
-
 [Script Ahoy](https://dd388.github.io/crals/) - a bash helper for archivists by Dianne Dietrich and Jarret Drake
 
 [Bash for Archivists](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
 
+[ffmprovisr](https://amiaopensource.github.io/ffmprovisr/) - an ffmpeg helper maintained by [Ashley Blewer](https://ashleyblewer.com/)
+
 [Man Pages](https://en.wikipedia.org/wiki/Man_page) - the Wikipedia page for "man pages" aka manual pages, describing the history and use of manual pages in the command line
-
-# Agenda
-
-## Part 1 - History, Context, Objectives
-
-what the command line is, what we can do with it, why it matters
-
-## Part 2 - Intro to Commands
-
-basic structures, navigation, inputs & outputs
-
-## LUNCH
-
-## Part 3 - CLI Tools for Digital Preservation
-
-moving files, verifying integrity of files and metadata
-
-## Part 4 - CLI Tools for Audiovisual Formats
-
-media file structure, MediaInfo + ffmpeg
-
-## Part 5 - Intro to Scripting
-
-workflow setup, variables, loops, managing scripts
 
 # Install instructions
 
 ## Test Files
 
-Please download a set of test file sthat you'll use for both days 1 and 2 [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
+Please download a set of test files that you'll use for both days 1 and 2 [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
 
 ## Mac Setup Instructions
 
@@ -193,6 +199,10 @@ grabbags is a software tool maintained the Association of Moving Image Archivist
 `cd ~/`
 
 `git clone https://github.com/amiaopensource/grabbags.git`
+
+# Presenter Bio
+
+Brendan Coates is a gardener, musician, proud cat-parent, and member of the Los Angeles Tenants Union. He has been working to ensure the long-term stability and relevance of archival audiovisual materials since 2011, with a particular focus on oral histories, for which he's contributed to programs at The Academy of Motion Picture Arts and Sciences, The History Makers, and, currently, at the Computer History Museum. His background with historical AV also led him to the UCSB Library, where he headed the Special Research Collections digitization lab for four years, contributing to their cylinder program and The National Jukebox projects, among others. A lifelong interest in computers and aversion to boring work inspired him to start learning Bash and Python and integrating them into his professional life, and he's just been on that path ever since. He's a graduate of the University of Michigan's School of Information (#HailToTheVictims), a winner of the James A. Lindner Prize for [QCT-Parse](https://github.com/FutureDays/qct-parse), a winner of the IGF Nuovo Award with [Cassie McQuater](http://cassiemcquater.com/) for his contribution to her web game [Black Room](https://cass.itch.io/blackroom), and an active member of The Association for Moving Image Archivists ([AMIA](https://amianet.org/)) and the Oral History Association's Archives Interest Group ([OHAAIG](https://www.oralhistory.org/oha-archives-interest-group-oha-aig/)).
 
 # Acknowledgements
 
