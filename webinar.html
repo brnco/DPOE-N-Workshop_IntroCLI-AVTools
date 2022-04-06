@@ -19,7 +19,7 @@
             }
             .twoColContainer{
                 display:flex;
-                outline:2px dotted blue;
+                outline:3px dotted blue;
             }
 	        .colRCLI{
 		        flex:3;
@@ -229,7 +229,7 @@
         				            no flags for this
     			            </div>
     			            <div class="fragment fade-in-then-out">
-        				        <h3>LS</h3>
+        				        <h3>ls</h3>
                                     "list" contents<br><br>
         				            key flags:<br>
                                     <code>-a</code> = all<br>
@@ -237,13 +237,13 @@
                                     <code>-1</code> = one per line<br>
                                     example: <code>ls -la</code>
     			            </div>
-    			            <div class="fragment fade-in-then-out">
+    			            <div id="cd" class="fragment fade-in-then-out">
         				        <h3>cd</h3>
-                                <div class="subheadline">"change directory"</div><br><br>
+                                <div class="subheadline">"change directory"</div><br>
         				            key arguments:<br>
                                     <code>~/</code> = home folder<br>
                                     <code>..</code> = parent directory<br>
-                                    <code>-</code>  = previous directory<br>
+                                    <code>- </code> = previous directory<br>
                                     example: <code>cd /Volumes/HardDrive</code>
     			            </div>
                             <div class="fragment fade-in-then-out">
@@ -632,7 +632,9 @@
             and thanks to everyone who made this possible
           </section>
           </div><!-- end of <div class=slides> -->
-          </div><!-- enf of <div class="reveal.js"> -->
+          </div><!-- end of <div class="reveal.js"> -->
+        <script>
+            $(".twoColContainer").appendChild("example: cd /Volumes/HardDrive")
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
         <script src="reveal.js/plugin/markdown/markdown.js"></script>
