@@ -643,19 +643,23 @@
             });
         </script>
         <script>
+            console.log("here1");
             var cmdwrap_pre = '<div class="example_command">';
             var cmdwrap_post = '</div>';
             $("section").append(cmd_div);
             Reveal.on('fragmentshown', event => {
-                            console.log("yeah");
+                            console.log("here2");
                             if(event.fragment.id === "cd") {
+                                console.log("here3")
                                 example_command = "cd /Volumes/HardDrive");
                             } else if(event.fragment.id === "ls"){
+                                console.loge("here4")
                                 cmd = "ls -al<br>ls -1 /mnt/HardDrive";
                             } else {
+                                console.log("here5")
                                 cmd = "";
                             }
-                            $(".example_command").inner(cmd);
+                            $(".example_command").innerHTML(cmd);
             });
             //Reveal.on('fragmenthidden', event => {
             //                $(".example_command").css({"visibility":"hidden";})
