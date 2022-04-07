@@ -699,7 +699,7 @@
             Reveal.on('fragmenthidden', event => {
                             const end_slides = ["find2"];
                             if(end_slides.includes(event.fragment.id)){
-                                $(".example_command").css({"visibility":"hidden"});
+                                $(".example_command").html("");
                             }
             });
         </script>
