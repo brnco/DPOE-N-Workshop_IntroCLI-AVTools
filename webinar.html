@@ -679,7 +679,7 @@
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
-                                cmd = '$ cd ~/Downloads<br>cd "/Volumes/Hard Drive"';
+                                cmd = '$ cd ~/Downloads<br>$ cd "/Volumes/Hard Drive"';
                             } else if(event.fragment.id === "ls"){
                                 cmd = "$ ls -al<br>$ ls -1 /Volumes/HardDrive";
                             } else if(event.fragment.id === "paths"){
@@ -689,16 +689,19 @@
                             } else if(event.fragment.id === "find1"){
                                 cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
                             } else if(event.fragment.id === "find2"){
-                                cmd = "$ find . -name .* -exec rm -f {}\;<br>$ find . -type f -empty"
+                                cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
                             } else {
                                 console.log("here5");
                                 cmd = "";
                             }
                             $(".example_command").html(cmd);
             });
-            //Reveal.on('fragmenthidden', event => {
-            //                $(".example_command").css({"visibility":"hidden";})
-            //            });
+            Reveal.on('fragmenthidden', event => {
+                            const end_slides = ["find2"];
+                            if(end_slides.includes(event.fragment.id)){
+                                $(".example_command").css({"visibility":"hidden";});
+                            }
+            });
         </script>
     </body>
 </html>
