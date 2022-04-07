@@ -702,6 +702,9 @@
                                 $(".example_command").html("");
                             }
             });
+            Reveal.on( 'slidechanged', event => {
+                            $(".example_command").html("");
+            } );
         </script>
     </body>
 </html>
