@@ -270,26 +270,26 @@
                                     <code>..</code> = parent directory<br>
                                     <code>- </code> = previous directory<br>
     			            </div>
-                            <div class="fragment fade-in-then-out">
+                            <div id="paths" class="fragment fade-in-then-out">
                                 <h3>paths</h3>
                                     absolute paths:<br>
                                     from drive to file<br><br>
                                     relative paths:<br>
                                     relative to working directory
                             </div>
-    			            <div class="fragment fade-in-then-out">
+    			            <div id="which" class="fragment fade-in-then-out">
                                 <h3>whereis and which</h3>
                                     return path of search "term"<br><br>
                                     find installation paths of command
                             </div>
-    			            <div class="fragment fade-in-then-out">
+    			            <div id="find1" class="fragment fade-in-then-out">
                                 <h3>find</h3>
                                     like <code>ls</code> but better<br>
                                     key flags:<br>
                                     <code>-type</code><br>
                                     <code>-name</code>
                             </div>
-    			            <div class="fragment fade-in-then-out">
+    			            <div id="find2" class="fragment fade-in-then-out">
                                 <h3>find</h3>
                                     more flags:<br>
                                     <code>-and</code><br>
@@ -679,11 +679,17 @@
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
-                                console.log("here3");
-                                cmd = "cd /Volumes/HardDrive";
+                                cmd = '$ cd ~/Downloads<br>cd "/Volumes/Hard Drive"';
                             } else if(event.fragment.id === "ls"){
-                                console.log("here4");
-                                cmd = "ls -al<br>ls -1 /mnt/HardDrive";
+                                cmd = "$ ls -al<br>$ ls -1 /Volumes/HardDrive";
+                            } else if(event.fragment.id === "paths"){
+                                cmd = "absolute: /home/bcoates/Downloads<br>relative: ../config";
+                            } else if(event.fragment.id === "which"){
+                                cmd = "$ which bash<br>$ whereis python";
+                            } else if(event.fragment.id === "find1"){
+                                cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
+                            } else if(event.fragment.id === "find2"){
+                                cmd = "$ find . -name .* -exec rm -f {}\;<br>$ find . -type f -empty"
                             } else {
                                 console.log("here5");
                                 cmd = "";
