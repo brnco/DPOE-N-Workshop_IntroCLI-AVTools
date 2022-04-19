@@ -324,19 +324,19 @@
                     <h2>Users & Permissions</h2><br>
                     <div class="twoColContainer">
                       <div class="r-stack colLCLI">
-                        <div class="fragment fade-in-then-out">
+                        <div id="id_nG"class="fragment fade-in-then-out">
                           <h3>id</h3>
                           display user info<br><br>
                           flags:<br>
                           -n = name<br>
                           -G = group
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="sudo" class="fragment fade-in-then-out">
                           <h3>sudo</h3>
                           "super user do"<br>
                           you're admin now<br>
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="chmod" class="fragment fade-in-then-out">
                           <h3>chmod|chown</h3>
                           chmod = change perms<br>
                           chown = change ownership<br>
@@ -354,20 +354,28 @@
                 </div>
             </section>
             <section>
-                <h2>Inputs & Outputs</h2><br>
+                <h2>I/O, Redirection</h2><br>
                 <div class="twoColContainer">
                      <div class="r-stack colLCLI">
-                       <div class="fragment fade-in-then-out">
+                      <div class="fragment fade-in-then-out">
+                        <h3>prequel</h3>
+                        "everything is a file"<br>
+                        ...in linux
+                      </div>
+                       <div id="echo" class="fragment fade-in-then-out">
                          <h3>echo</h3>
                          print to terminal<br>
                          text -> stdout
                        </div>
                       <div class="fragment fade-in-then-out">
                         <h3>stdin</h3>
+                        "standard in" = terminal
                         <h3>stdout</h3>
+                        "standard out" = also terminal
                         <h3>stderr</h3>
+                        "standard error" = again, terminal
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="pipes" class="fragment fade-in-then-out">
                         <h3>pipes</h3>
                         send output to command<br>
                         common uses:<br>
