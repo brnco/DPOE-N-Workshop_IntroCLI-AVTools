@@ -714,7 +714,7 @@
                             } else if(event.fragment.id === "echo"){
                                 cmd = "$ echo 'Hello World!'<br>$ echo $PATH"
                             } else if(event.fragment.id === "pipes"){
-                                cmd = "$ ps aux | grep zoom<br>$ tail ingest.log"
+                                cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less"
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null"
                             } else {
