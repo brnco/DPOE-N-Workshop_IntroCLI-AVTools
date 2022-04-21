@@ -618,6 +618,7 @@
                     $(".example_command").html("");
                 }
             });
+            cmd="";
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
@@ -633,17 +634,17 @@
                             } else if(event.fragment.id === "find2"){
                                 cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
                             } else if(event.fragment.id === "id_nG"){
-                                cmd = "$ id -nG"
+                                cmd = "$ id -nG";
                             } else if(event.fragment.id === "sudo"){
-                                cmd = "$ sudo fdisk -l<br>$ sudo su"
+                                cmd = "$ sudo fdisk -l<br>$ sudo su";
                             } else if(event.fragment.id === "chmod"){
-                                cmd = "# chmod +x script.sh<br># chown brnco:brnco ~/Downloads/pyforav.zip"
+                                cmd = "# chmod +x script.sh<br># chown brnco:brnco ~/Downloads/pyforav.zip";
                             } else if(event.fragment.id === "echo"){
-                                cmd = "$ echo 'Hello World!'<br>$ echo $PATH"
+                                cmd = "$ echo 'Hello World!'<br>$ echo $PATH";
                             } else if(event.fragment.id === "pipes"){
-                                cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less"
+                                cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less";
                             } else if(event.fragment.id === "redirects"){
-                                cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null"
+                                cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
                             } else {
                                 cmd = "";
                             }
