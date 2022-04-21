@@ -612,9 +612,6 @@
         </script>
         <script>
             console.log("here1");
-            var cmdwrap_pre = '<div class="example_command">';
-            var cmdwrap_post = '</div>';
-            var cmd_div = cmdwrap_pre + cmdwrap_post;
             Reveal.on('fragmenthidden', event => {
                 /*const end_slides = ["find2"];*/
                 if(event.fragment.class === "fragment fade-in-then-out"){
@@ -652,6 +649,13 @@
                             }
                             $(".example_command").html(cmd);
             });
+            if(!$cmd){
+                cmdwrap_pre = '<div class="example_command" style="display:hidden;">';        
+            } else {
+                cmdwrap_pre = '<div class="example_command" style="display:visible;">';
+            }
+            cmdwrap_post = '</div>';
+            cmd_div = cmdwrap_pre + cmdwrap_post;
             $("section").append(cmd_div);
             Reveal.on( 'slidechanged', event => {
                             $(".example_command").html("");
