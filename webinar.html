@@ -617,10 +617,8 @@
             Reveal.on('fragmenthidden', event => {
                 /*const end_slides = ["find2"];*/
                 if(event.fragment.class === "fragment fade-in-then-out"){
-                    $(".example_command").html("");
-                    cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
-                    cmdwrap_post = '</div>';
-                    cmd_div = cmdwrap_pre + cmdwrap_post;
+                    cmd_div = $(".example_command");
+                    $("section").remove(cmd_div);
                 }
             });
             Reveal.on('fragmentshown', event => {
@@ -655,18 +653,17 @@
                             $(".example_command").html(cmd);
                             if(!cmd){
                                 console.log("ayo no cmd");
-                                cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
+                                cmd_div = $(".example_command");
+                                $("section").remove(cmd_div);
                             } else {
-                                cmdwrap_pre = '<div class="example_command" style="visibility:visible;">';
+                                cmdwrap = '<div class="example_command" style="visibility:visible;"><div>';
+                                $("section").append(cmdwrap);
                             }
             });
             Reveal.on( 'slidechanged', event => {
-                            $(".example_command").html("");
-                            cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
+                    cmd_div = $(".example_command");
+                    $("section").remove(cmd_div);
             } );
-            cmdwrap_post = '</div>';
-            cmd_div = cmdwrap_pre + cmdwrap_post;
-            $("section").append(cmd_div);
         </script>
     </body>
 </html>
