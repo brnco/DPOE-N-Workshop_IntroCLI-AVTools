@@ -650,11 +650,12 @@
                             }
                             $(".example_command").html(cmd);
             });
-            if(!cmd){
+            /*if(!cmd){
                 cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
             } else {
                 cmdwrap_pre = '<div class="example_command" style="visibility:visible;">';
-            }
+            }*/
+            cmdwrap_pre = '<div class="example_command">';
             cmdwrap_post = '</div>';
             cmd_div = cmdwrap_pre + cmdwrap_post;
             $("section").append(cmd_div);
