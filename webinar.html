@@ -616,6 +616,10 @@
                 /*const end_slides = ["find2"];*/
                 if(event.fragment.class === "fragment fade-in-then-out"){
                     $(".example_command").html("");
+                    cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
+                    cmdwrap_post = '</div>';
+                    cmd_div = cmdwrap_pre + cmdwrap_post;
+                    $("section").append(cmd_div);
                 }
             });
             cmd="";
@@ -649,16 +653,16 @@
                                 cmd = "";
                             }
                             $(".example_command").html(cmd);
+                            cmdwrap_pre = '<div class="example_command">';
+                            if(!cmd){
+                                cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
+                            } else {
+                                cmdwrap_pre = '<div class="example_command" style="visibility:visible;">';
+                            }
+                    cmdwrap_post = '</div>';
+                    cmd_div = cmdwrap_pre + cmdwrap_post;
+                    $("section").append(cmd_div);
             });
-            /*if(!cmd){
-                cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
-            } else {
-                cmdwrap_pre = '<div class="example_command" style="visibility:visible;">';
-            }*/
-            cmdwrap_pre = '<div class="example_command">';
-            cmdwrap_post = '</div>';
-            cmd_div = cmdwrap_pre + cmdwrap_post;
-            $("section").append(cmd_div);
             Reveal.on( 'slidechanged', event => {
                             $(".example_command").html("");
             } );
