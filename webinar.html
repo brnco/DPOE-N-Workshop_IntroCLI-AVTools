@@ -612,6 +612,8 @@
         </script>
         <script>
             console.log("here1");
+            cmdwrap_pre = '<div class="example_command">';
+            cmd="";
             Reveal.on('fragmenthidden', event => {
                 /*const end_slides = ["find2"];*/
                 if(event.fragment.class === "fragment fade-in-then-out"){
@@ -621,7 +623,6 @@
                     cmd_div = cmdwrap_pre + cmdwrap_post;
                 }
             });
-            cmd="";
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
@@ -652,7 +653,6 @@
                                 cmd = "";
                             }
                             $(".example_command").html(cmd);
-                            cmdwrap_pre = '<div class="example_command">';
                             if(!cmd){
                                 console.log("ayo no cmd");
                                 cmdwrap_pre = '<div class="example_command" style="visibility:hidden;">';        
