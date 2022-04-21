@@ -389,26 +389,11 @@
                         cmd > /dev/null<br>
                         cmd >> log.txt
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="ampersand" class="fragment fade-in-then-out">
                           <h3>&&</h3>
                           sequence commands<br>
                           only runs cmd2 IF<br>
                           cmd1 successful
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>touch</h3>
-                          write blank file
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>cat</h3>
-                          con"cat"enate files<br>
-                          reads files to stdout
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>all together</h3>
-                          breakout rooms<br>
-                          1. write to a text file<br>
-                          2. write dir contents
                       </div>
                      </div>
               <div class="colRCLI">
@@ -436,30 +421,30 @@
                 <h2>Moving Files</h2><br>
                 <div class="twoColContainer">
                      <div class="r-stack colLCLI">
-                       <div class="fragment fade-in-then-out">
+                       <div id="cp" class="fragment fade-in-then-out">
                          <h3>cp</h3>
                          "copy"<br>
                          flags:<br>
-                         -r = recursive (subdirs)<br>
+                         -R = recursive (subdirs)<br>
                          -a = timestamps<br>
                          -i/n = interactive/not<br>
                          -v = verbose
                        </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="mv" class="fragment fade-in-then-out">
                         <h3>mv</h3>
                         "move"<br>
                         renames files/paths<br>
                         flags:<br>
                         -i/n = interactive/not
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="mkdir" class="fragment fade-in-then-out">
                         <h3>mkdir</h3>
                         "make directory"<br>
                         flags:<br>
                         -p = parents<br>
                         -v = verbose
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="rsync1" class="fragment fade-in-then-out">
                         <h3>rsync</h3>
                         sync files/ dirs<br>
                         flags:<br>
@@ -468,7 +453,7 @@
                         -z = compress<br>
                         -x = extended attrs
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="rsync2" class="fragment fade-in-then-out">
                         <h3>rsync</h3>
                         flags:<br>
                         --progress<br>
@@ -509,13 +494,13 @@
                 <section>
                 <div class="twoColContainer">
                  <div class="r-stack colLCLI">
-                   <div class="fragment fade-in-then-out">
+                   <div id="md5sum" class="fragment fade-in-then-out">
                      <h3>md5sum</h3>
                      generate MD5 hash<br>
                      flags:<br>
                      -c = check files
                    </div>
-                  <div class="fragment fade-in-then-out">
+                  <div id="shasum" class="fragment fade-in-then-out">
                     <h3>shasum</h3>
                     generate SHA hash<br>
                     flags:<br>
@@ -552,69 +537,12 @@
             </div>
           </section>
             <section>
-              <h4>bagit-python</h4>
-              ask Nick and Ben abt this tmrw
-            </section>
-            <section>
               <h4>grabbags</h4>
               wrapper for bagit-python<br>
-              maintianed by AMIA OSC<br>
+              maintained by AMIA OSC<br>
               exposes bagit-python to CLI
             </section>
-          </section>
-          <section>
-            <h1>Tools for AVPres</h1>
-          </section>
             <section>
-              <h2>media file structure</h2>
-              <section>
-            <div class="twoColContainer">
-              <div class="colL">
-                <h5>wrapper / container</h5>
-                the file header and structure<br>
-              </div>
-              <div class="colR">
-                <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Snickers_wrapped.png">
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="twoColContainer">
-              <div class="colL">
-                <h5>stream</h5>
-                individual media bitstream<br>
-                streams are wrapped into files<br>
-                nougat | peanut |caramel<br>
-                video  | audio  |subtitles
-              </div>
-              <div class="colR">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Snickers-broken.png">
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="twoColContainer">
-              <div class="colLEven">
-                <h5>codec</h5>
-                stands for "encode/decode"<br>
-                the method/ algorithm<br>
-                for en/decoding data
-              </div>
-              <div class="colREven">
-                <h5>Snickers</h5>
-                encoding = making a Snickers<br>
-                decoding = eating it<br>
-                codec = laws of chemistry
-              </div>
-            </div>
-          </section>
-          </section>
-          <section>
-            <h1>Tools for AVPres</h1>
-            <h3>MediaInfo</h3>
-            <h3>ffmpeg</h3>
-          </section>
-          <section>
             <h1>Scripting</h1>
             <section>
             putting everything together
@@ -656,12 +584,9 @@
             </div>
           </div>
           </section>
-          <section>
-            ok let's actually write a lil script
-          </section>
           </section>
           <section>
-            <h1>questions?</h1>
+            <h1>wrap up | questions</h1>
           </section>
           <section>
             <h1>thank you!</h1>
