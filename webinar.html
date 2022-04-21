@@ -615,6 +615,12 @@
             var cmdwrap_pre = '<div class="example_command">';
             var cmdwrap_post = '</div>';
             var cmd_div = cmdwrap_pre + cmdwrap_post;
+            Reveal.on('fragmenthidden', event => {
+                /*const end_slides = ["find2"];*/
+                if(event.fragment.class === "fragment fade-in-then-out"){
+                    $(".example_command").html("");
+                }
+            });
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
@@ -645,14 +651,8 @@
                                 cmd = "";
                             }
                             $(".example_command").html(cmd);
-                            $("section").append(cmd_div);
             });
-            Reveal.on('fragmenthidden', event => {
-                            const end_slides = ["find2"];
-                            if(end_slides.includes(event.fragment.id)){
-                                $(".example_command").html("");
-                            }
-            });
+            $("section").append(cmd_div);
             Reveal.on( 'slidechanged', event => {
                             $(".example_command").html("");
             } );
