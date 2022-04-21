@@ -383,11 +383,11 @@
                         less<br>
                         grep (later)
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="redirects" class="fragment fade-in-then-out">
                         <h3>redirects</h3>
                         send output to file<br>
-                        cmd >> log.txt<br>
-                        cmd >> /dev/null
+                        cmd > /dev/null<br>
+                        cmd >> log.txt
                       </div>
                       <div class="fragment fade-in-then-out">
                           <h3>&&</h3>
@@ -690,7 +690,6 @@
             var cmdwrap_pre = '<div class="example_command">';
             var cmdwrap_post = '</div>';
             var cmd_div = cmdwrap_pre + cmdwrap_post;
-            $("section").append(cmd_div);
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
                             if(event.fragment.id === "cd") {
@@ -718,10 +717,10 @@
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null"
                             } else {
-                                console.log("here5");
                                 cmd = "";
                             }
                             $(".example_command").html(cmd);
+                            $("section").append(cmd_div);
             });
             Reveal.on('fragmenthidden', event => {
                             const end_slides = ["find2"];
