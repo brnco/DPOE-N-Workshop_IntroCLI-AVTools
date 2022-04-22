@@ -650,15 +650,18 @@
                             } else {
                                 cmd = "";
                             }
-                            $(".example_command").html(cmd);
+                            /*$(".example_command").html(cmd);*/
                             if(!cmd){
                                 console.log("ayo no cmd");
                                 cmd_div = $(".example_command");
                                 $("section").remove(cmd_div);
                             } else {
-                                cmdwrap = '<div class="example_command" style="visibility:visible;"><div>';
-                                $("section").append(cmdwrap);
-                            }
+                                cmd_div = $(".example_command");
+                                if(cmd_div.length) {
+                                    $(".example_command").html(cmd);
+                                } else {
+                                    cmdwrap = '<div class="example_command" style="visibility:visible;"><div>';
+                                    $("section").append(cmdwrap);
             });
             Reveal.on( 'slidechanged', event => {
                     cmd_div = $(".example_command");
