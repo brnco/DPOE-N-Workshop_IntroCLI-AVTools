@@ -485,9 +485,8 @@
                   <div class="colREven">
                     <h3>CRC</h3>
                     break file into blocks<br>
-                    read blocks + compute check value<br>
-                    check block hashes +<br>
-                    block position
+                    read blocks + compute block hash<br>
+                    check block hashes
                   </div>
                 </div>
                 </section>
@@ -641,6 +640,10 @@
                                 cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less";
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
+                            } else if(event.fragment.id === "rsync1"){
+                                 cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /"
+                            } else if(event.fragment.id === "rsync2"){
+                                cmd = "$ rsync -avzx --progress --exclude='*.txt' --logfile=~/Desktop/rsync-1.log /pyforav/120th_anniversary/0909 ~/Desktop"
                             } else {
                                 cmd = "";
                             }
