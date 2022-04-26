@@ -617,16 +617,15 @@
             Reveal.on('fragmenthidden', event => {
                 /*const end_slides = ["find2"];*/
                 if(event.fragment.class === "fragment fade-in-then-out"){
-                    cmd_div = $(".example_command");
-                    $("section").remove(cmd_div);
+                    $(".example_command").remove();
                 }
             });
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
-                            if(event.fragment.id === "cd") {
-                                cmd = '$ cd ~/Downloads<br>$ cd "/Volumes/Hard Drive"';
-                            } else if(event.fragment.id === "ls"){
+                            if(event.fragment.id === "ls"){
                                 cmd = "$ ls -al<br>$ ls -1 /Volumes/HardDrive";
+                            } else if(event.fragment.id === "cd") {
+                                cmd = '$ cd ~/Downloads<br>$ cd "/Volumes/Hard Drive"';
                             } else if(event.fragment.id === "paths"){
                                 cmd = "absolute: /home/bcoates/Downloads<br>relative: ../config";
                             } else if(event.fragment.id === "which"){
@@ -654,7 +653,7 @@
                             if(!cmd){
                                 console.log("ayo no cmd");
                                 cmd_div = $(".example_command");
-                                $("section").remove(cmd_div);
+                                $("example_command").remove();
                             } else {
                                 cmd_div = $(".example_command");
                                 if(cmd_div.length) {
@@ -662,12 +661,12 @@
                                 } else {
                                     cmdwrap = '<div class="example_command" style="visibility:visible;"><div>';
                                     $("section").append(cmdwrap);
+                                    $(".example_command").html(cmd)
                                 }
                             }
             });
-            Reveal.on( 'slidechanged', event => {
-                    cmd_div = $(".example_command");
-                    $("section").remove(cmd_div);
+            Reveal.on( 'slidechanged' event => {
+                    $(".example_command").remove();
             } );
         </script>
     </body>
