@@ -641,9 +641,16 @@
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
                             } else if(event.fragment.id === "rsync1"){
-                                 cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /"
+                                 cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /";
                             } else if(event.fragment.id === "rsync2"){
-                                cmd = "$ rsync -avzx --progress --exclude='*.txt' --logfile=~/Desktop/rsync-1.log /pyforav/120th_anniversary/0909 ~/Desktop"
+                                cmd = "$ rsync -avzx --progress --exclude='*.txt' --log-file=~/Desktop/rsync-1.log /pyforav/120th_anniversary/0909 ~/Desktop";
+                                            
+                            } else if(event.fragment.id === "mv"){
+                                cmd = "$ mv ~/Downloads/pyforav ~/Desktop";
+                            } else if(event.fragment.id === "cp"){
+                                cmd = "$ cp /pyforav/on_demand/catexhibit_1157.mov ~/Desktop<br>$ cp -R /pyforav/on_demand ~/Desktop";
+                            } else if(event.fragment.id === "mkdir"){                                        
+                                cmd = "$ mkdir ~/Desktop/2022-05-04<br>$ mkdir -P ~/Desktop/2022-05-04/parent/child";
                             } else {
                                 cmd = "";
                             }
