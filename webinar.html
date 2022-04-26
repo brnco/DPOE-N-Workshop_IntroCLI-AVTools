@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>B) DPOE-N Webinar: Intro to CLI</title>
+        <title>😎 DPOE-N Webinar: Intro to CLI</title>
         <link rel="stylesheet" href="reveal.js/dist/reset.css">
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
         <link rel="stylesheet" href="reveal.js/dist/theme/materialocean.css" id="theme">
@@ -11,6 +11,9 @@
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
         <style type="text/css">
+            div p {
+                text-align:left;
+            }
             .twoColContainer{
                 display:flex;
                 /*outline:3px dotted blue;*/
@@ -24,6 +27,7 @@
 		        flex:2;
 		        text-align:left;
                 align-self:flex-start;
+                align-items:flex-start;
 		        font-size:80%;
 		        top:0;
 		        position:relative;
@@ -32,6 +36,14 @@
 	        }
             .example_command {
                 text-align:left;
+                font-size:80%;
+                background-color:#E5E9F0;
+                color:#00010A;
+                font-family:monospace;
+                display:inline-block;
+                float:left;
+                padding:6px;
+                /*width:75%;*/
                 /*border:1px solid yellow;*/
             }
 	        .colLCLI h3{
@@ -56,13 +68,13 @@
                 flex:1;
                 position:relative;
                 text-align:left;
-                outline: 1px solid grey;
+                /*outline: 1px solid grey;*/
             }
             .colREven{
                 flex:1;
                 position:relative;
                 text-align:left;
-                outline: 1px solid red;
+                /*outline: 1px solid red;*/
             }
             .colREven img{
                 object-fit:contain;
@@ -159,7 +171,7 @@
                                     "terminal emulator," technically<br>
                                     many terminals to choose from<br>
                                     common interface for servers<br>
-                                    ppl will think you're a hacker B)
+                                    ppl will think you're a hacker 😎
                                 </div>
                                 <div class="colR">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Xterm.png/300px-Xterm.png">
@@ -312,26 +324,22 @@
                     <h2>Users & Permissions</h2><br>
                     <div class="twoColContainer">
                       <div class="r-stack colLCLI">
-                        <div class="fragment fade-in-then-out">
+                        <div id="id_nG"class="fragment fade-in-then-out">
                           <h3>id</h3>
                           display user info<br><br>
                           flags:<br>
                           -n = name<br>
                           -G = group
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="sudo" class="fragment fade-in-then-out">
                           <h3>sudo</h3>
                           "super user do"<br>
                           you're admin now<br>
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="chmod" class="fragment fade-in-then-out">
                           <h3>chmod|chown</h3>
                           chmod = change perms<br>
                           chown = change ownership<br>
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>ls -la</h3>
-                          list directory perms<br>
                       </div>
                   </div>
                   <div class="colRCLI">
@@ -346,21 +354,28 @@
                 </div>
             </section>
             <section>
-                <h2>Inputs & Outputs</h2><br>
+                <h2>I/O, Redirection</h2><br>
                 <div class="twoColContainer">
                      <div class="r-stack colLCLI">
-                       <div class="fragment fade-in-then-out">
+                      <div class="fragment fade-in-then-out">
+                        <h3>prequel</h3>
+                        "everything is a file"<br>
+                        ...in linux
+                      </div>
+                       <div id="echo" class="fragment fade-in-then-out">
                          <h3>echo</h3>
                          print to terminal<br>
                          text -> stdout
                        </div>
                       <div class="fragment fade-in-then-out">
                         <h3>stdin</h3>
+                        "standard in" = terminal
                         <h3>stdout</h3>
+                        "standard out" = also terminal
                         <h3>stderr</h3>
-                        streams!
+                        "standard error" = again, terminal
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="pipes" class="fragment fade-in-then-out">
                         <h3>pipes</h3>
                         send output to command<br>
                         common uses:<br>
@@ -368,32 +383,17 @@
                         less<br>
                         grep (later)
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="redirects" class="fragment fade-in-then-out">
                         <h3>redirects</h3>
                         send output to file<br>
-                        cmd >> log.txt<br>
-                        cmd >> /dev/null
+                        cmd > /dev/null<br>
+                        cmd >> log.txt
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="ampersand" class="fragment fade-in-then-out">
                           <h3>&&</h3>
                           sequence commands<br>
                           only runs cmd2 IF<br>
                           cmd1 successful
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>touch</h3>
-                          write blank file
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>cat</h3>
-                          con"cat"enate files<br>
-                          reads files to stdout
-                      </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>all together</h3>
-                          breakout rooms<br>
-                          1. write to a text file<br>
-                          2. write dir contents
                       </div>
                      </div>
               <div class="colRCLI">
@@ -421,30 +421,30 @@
                 <h2>Moving Files</h2><br>
                 <div class="twoColContainer">
                      <div class="r-stack colLCLI">
-                       <div class="fragment fade-in-then-out">
+                       <div id="cp" class="fragment fade-in-then-out">
                          <h3>cp</h3>
                          "copy"<br>
                          flags:<br>
-                         -r = recursive (subdirs)<br>
+                         -R = recursive (subdirs)<br>
                          -a = timestamps<br>
                          -i/n = interactive/not<br>
                          -v = verbose
                        </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="mv" class="fragment fade-in-then-out">
                         <h3>mv</h3>
                         "move"<br>
                         renames files/paths<br>
                         flags:<br>
                         -i/n = interactive/not
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="mkdir" class="fragment fade-in-then-out">
                         <h3>mkdir</h3>
                         "make directory"<br>
                         flags:<br>
                         -p = parents<br>
                         -v = verbose
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="rsync1" class="fragment fade-in-then-out">
                         <h3>rsync</h3>
                         sync files/ dirs<br>
                         flags:<br>
@@ -453,7 +453,7 @@
                         -z = compress<br>
                         -x = extended attrs
                       </div>
-                      <div class="fragment fade-in-then-out">
+                      <div id="rsync2" class="fragment fade-in-then-out">
                         <h3>rsync</h3>
                         flags:<br>
                         --progress<br>
@@ -494,13 +494,13 @@
                 <section>
                 <div class="twoColContainer">
                  <div class="r-stack colLCLI">
-                   <div class="fragment fade-in-then-out">
+                   <div id="md5sum" class="fragment fade-in-then-out">
                      <h3>md5sum</h3>
                      generate MD5 hash<br>
                      flags:<br>
                      -c = check files
                    </div>
-                  <div class="fragment fade-in-then-out">
+                  <div id="shasum" class="fragment fade-in-then-out">
                     <h3>shasum</h3>
                     generate SHA hash<br>
                     flags:<br>
@@ -537,69 +537,12 @@
             </div>
           </section>
             <section>
-              <h4>bagit-python</h4>
-              ask Nick and Ben abt this tmrw
-            </section>
-            <section>
               <h4>grabbags</h4>
               wrapper for bagit-python<br>
-              maintianed by AMIA OSC<br>
+              maintained by AMIA OSC<br>
               exposes bagit-python to CLI
             </section>
-          </section>
-          <section>
-            <h1>Tools for AVPres</h1>
-          </section>
             <section>
-              <h2>media file structure</h2>
-              <section>
-            <div class="twoColContainer">
-              <div class="colL">
-                <h5>wrapper / container</h5>
-                the file header and structure<br>
-              </div>
-              <div class="colR">
-                <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Snickers_wrapped.png">
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="twoColContainer">
-              <div class="colL">
-                <h5>stream</h5>
-                individual media bitstream<br>
-                streams are wrapped into files<br>
-                nougat | peanut |caramel<br>
-                video  | audio  |subtitles
-              </div>
-              <div class="colR">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Snickers-broken.png">
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="twoColContainer">
-              <div class="colLEven">
-                <h5>codec</h5>
-                stands for "encode/decode"<br>
-                the method/ algorithm<br>
-                for en/decoding data
-              </div>
-              <div class="colREven">
-                <h5>Snickers</h5>
-                encoding = making a Snickers<br>
-                decoding = eating it<br>
-                codec = laws of chemistry
-              </div>
-            </div>
-          </section>
-          </section>
-          <section>
-            <h1>Tools for AVPres</h1>
-            <h3>MediaInfo</h3>
-            <h3>ffmpeg</h3>
-          </section>
-          <section>
             <h1>Scripting</h1>
             <section>
             putting everything together
@@ -641,12 +584,9 @@
             </div>
           </div>
           </section>
-          <section>
-            ok let's actually write a lil script
-          </section>
           </section>
           <section>
-            <h1>questions?</h1>
+            <h1>wrap up | questions</h1>
           </section>
           <section>
             <h1>thank you!</h1>
@@ -654,11 +594,6 @@
           </section>
           </div><!-- end of <div class=slides> -->
           </div><!-- end of <div class="reveal.js"> -->
-        <script>
-            var example_command = "$ cd /Volumes/HardDrive";
-            var example_command = "find . -type d -name logs";
-            var example_block = "<code>" + example_command + "</code>";
-            //$(".hasExample").append(example_block).css({"text-align":"left","font-size":"80%"});
         </script>
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
@@ -672,16 +607,20 @@
         </script>
         <script>
             console.log("here1");
-            var cmdwrap_pre = '<div class="example_command">';
-            var cmdwrap_post = '</div>';
-            var cmd_div = cmdwrap_pre + cmdwrap_post;
-            $("section").append(cmd_div);
+            cmdwrap_pre = '<div class="example_command">';
+            cmd="";
+            Reveal.on('fragmenthidden', event => {
+                /*const end_slides = ["find2"];*/
+                if(event.fragment.class === "fragment fade-in-then-out"){
+                    $(".example_command").remove();
+                }
+            });
             Reveal.on('fragmentshown', event => {
                             console.log("here2");
-                            if(event.fragment.id === "cd") {
-                                cmd = '$ cd ~/Downloads<br>$ cd "/Volumes/Hard Drive"';
-                            } else if(event.fragment.id === "ls"){
+                            if(event.fragment.id === "ls"){
                                 cmd = "$ ls -al<br>$ ls -1 /Volumes/HardDrive";
+                            } else if(event.fragment.id === "cd") {
+                                cmd = '$ cd ~/Downloads<br>$ cd "/Volumes/Hard Drive"';
                             } else if(event.fragment.id === "paths"){
                                 cmd = "absolute: /home/bcoates/Downloads<br>relative: ../config";
                             } else if(event.fragment.id === "which"){
@@ -690,21 +629,40 @@
                                 cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
                             } else if(event.fragment.id === "find2"){
                                 cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
+                            } else if(event.fragment.id === "id_nG"){
+                                cmd = "$ id -nG";
+                            } else if(event.fragment.id === "sudo"){
+                                cmd = "$ sudo fdisk -l<br>$ sudo su";
+                            } else if(event.fragment.id === "chmod"){
+                                cmd = "# chmod +x script.sh<br># chown brnco:brnco ~/Downloads/pyforav.zip";
+                            } else if(event.fragment.id === "echo"){
+                                cmd = "$ echo 'Hello World!'<br>$ echo $PATH";
+                            } else if(event.fragment.id === "pipes"){
+                                cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less";
+                            } else if(event.fragment.id === "redirects"){
+                                cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
                             } else {
-                                console.log("here5");
                                 cmd = "";
                             }
-                            $(".example_command").html(cmd);
-            });
-            Reveal.on('fragmenthidden', event => {
-                            const end_slides = ["find2"];
-                            if(end_slides.includes(event.fragment.id)){
-                                $(".example_command").html("");
+                            /*$(".example_command").html(cmd);*/
+                            if(!cmd){
+                                console.log("ayo no cmd");
+                                cmd_div = $(".example_command");
+                                $("example_command").remove();
+                            } else {
+                                cmd_div = $(".example_command");
+                                if(cmd_div.length) {
+                                    $(".example_command").html(cmd);
+                                } else {
+                                    cmdwrap = '<div class="example_command" style="visibility:visible;"><div>';
+                                    $("section").append(cmdwrap);
+                                    $(".example_command").html(cmd);
+                                }
                             }
             });
             Reveal.on( 'slidechanged', event => {
-                            $(".example_command").html("");
-            } );
+                    $(".example_command").remove();
+            });
         </script>
     </body>
 </html>
