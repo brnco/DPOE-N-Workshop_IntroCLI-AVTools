@@ -574,13 +574,13 @@
             </div>
           </div>
           </section>
-          <!-- <section>
+          <section>
             <h1>wrap up | questions</h1>
           </section>
           <section>
             <h1>thank you!</h1>
             and thanks to everyone who made this possible
-          </section>-->
+          </section>
             </section>
           </div><!-- end of <div class=slides> -->
           </div><!-- end of <div class="reveal.js"> -->
@@ -617,7 +617,7 @@
                             } else if(event.fragment.id === "find1"){
                                 cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
                             } else if(event.fragment.id === "find2"){
-                                cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
+                                cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty";
                             } else if(event.fragment.id === "find3"){
                                 cmd = "$ find /pyforav/ -type f -name ".DS_Store" -delete"
                             } else if(event.fragment.id === "id_nG"){
@@ -646,9 +646,9 @@
                                 cmd = "$ md5sum /pyforav/federal_grant/napl_1125_pres.mov";
                             
                             } else if(event.fragment.id === "shasum"){
-                                cmd = "$ shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov"
+                                cmd = "$ shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov";
                             } else if(event.fragment.id === "for"){
-                                            cmd = "$ for file in *; do echo $file; done<br>$ for file in *.mov; do shasum -p -a 256 $file >> $file.sha256; done"
+                                            cmd = "$ for file in *; do echo $file; done<br>$ for file in *.mov; do shasum -p -a 256 $file >> $file.sha256; done";
                             } else {
                                 cmd = "";
                             }
