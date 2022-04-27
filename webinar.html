@@ -543,7 +543,7 @@
             </section>
           </section>
             <section>
-            <h1>Scripting</h1>
+            <h2>Scripting</h2>
             <section>
             putting everything together
             </section>
@@ -562,7 +562,7 @@
                  loop thru directory
                </div>
               </div>
-             </div>
+              <!--</div>-->
              <div class="colRCLI">
               <iframe
                src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
@@ -640,6 +640,11 @@
                                 cmd = "$ cp /pyforav/on_demand/catexhibit_1157.mov ~/Desktop<br>$ cp -R /pyforav/on_demand ~/Desktop";
                             } else if(event.fragment.id === "mkdir"){                                        
                                 cmd = "$ mkdir ~/Desktop/2022-05-04<br>$ mkdir -P ~/Desktop/2022-05-04/parent/child";
+                            } else if(event.fragment.id === "md5sum"){
+                                cmd = "md5sum /pyforav/federal_grant/napl_1125_pres.mov";
+                            
+                            } else if(event.fragment.id === "shasum"){
+                                cmd = "shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov"
                             } else {
                                 cmd = "";
                             }
