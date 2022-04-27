@@ -381,7 +381,7 @@
                         common uses:<br>
                         tail<br>
                         less<br>
-                        grep (later)
+                        grep
                       </div>
                       <div id="redirects" class="fragment fade-in-then-out">
                         <h3>redirects</h3>
@@ -474,7 +474,6 @@
             </section>
             <section>
                 <h2>Checksums</h2><br>
-                <section>
                 <div class="twoColContainer">
                   <div class="colLEven">
                     <h3>Hashes</h3>
@@ -485,13 +484,13 @@
                   <div class="colREven">
                     <h3>CRC</h3>
                     break file into blocks<br>
-                    read blocks + compute check value<br>
-                    check block hashes +<br>
-                    block position
+                    read blocks + compute block hash<br>
+                    check block hashes
                   </div>
                 </div>
-                </section>
-                <section>
+            </section>
+            <section>
+                <h2>Checksums</h2><br>
                 <div class="twoColContainer">
                  <div class="r-stack colLCLI">
                    <div id="md5sum" class="fragment fade-in-then-out">
@@ -520,7 +519,6 @@
             </div>
           </div>
           </section>
-          </section>
           <section>
             <h1>BagIt</h1>
             <section>
@@ -542,37 +540,23 @@
               maintained by AMIA OSC<br>
               exposes bagit-python to CLI
             </section>
+          </section>
             <section>
-            <h1>Scripting</h1>
-            <section>
-            putting everything together
-            </section>
-            <section>
-            <h3>CLI scripting</h3>
+            <h2>Scripting</h2>
             <div class="twoColContainer">
              <div class="r-stack colLCLI">
-               <div class="fragment fade-in-then-out">
-                 <h3>find -exec</h3>
+               <div id="find3" class="fragment fade-in-then-out">
+                 <h3>find</h3>
                  execute a command<br>
                  on output of find
                </div>
-               <div class="fragment fade-in-then-out">
+               <div id="for" class="fragment fade-in-then-out">
                  <h3>FOR loops</h3>
                  iterate through something<br>
                  loop thru directory
                </div>
-              <div class="fragment fade-in-then-out">
-                <h3>variables</h3>
-                variable=value<br>
-                ${variable} - deploy it<br>
               </div>
-              <div class="fragment fade-in-then-out">
-                <h3>variable substitution</h3>
-                file="/path/to/file.mkv"<br>
-                ${file%/.} = ?<br>
-                ${file%.mkv}.mp4 = ?<br>
-              </div>
-             </div>
+              <!--</div>-->
              <div class="colRCLI">
               <iframe
                src="https://player.twitch.tv/?channel=cassiemcq&parent=brnco.github.io"
@@ -584,17 +568,16 @@
             </div>
           </div>
           </section>
-          </section>
           <section>
-            <h1>wrap up | questions</h1>
+            <h1>wrap up & questions</h1>
           </section>
           <section>
             <h1>thank you!</h1>
             and thanks to everyone who made this possible
           </section>
+            </section>
           </div><!-- end of <div class=slides> -->
           </div><!-- end of <div class="reveal.js"> -->
-        </script>
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
         <script src="reveal.js/plugin/markdown/markdown.js"></script>
@@ -628,7 +611,9 @@
                             } else if(event.fragment.id === "find1"){
                                 cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
                             } else if(event.fragment.id === "find2"){
-                                cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
+                                cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty";
+                            } else if(event.fragment.id === "find3"){
+                                cmd = '$ find /pyforav/ -type f -name ".DS_Store" -delete'
                             } else if(event.fragment.id === "id_nG"){
                                 cmd = "$ id -nG";
                             } else if(event.fragment.id === "sudo"){
@@ -641,6 +626,25 @@
                                 cmd = "$ ps aux | grep zoom<br>$ ps aux | grep firefox | less";
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
+                            } else if(event.fragment.id === "ampersand"){
+                                cmd = "$ cd ~/Downloads && ls";
+                            } else if(event.fragment.id === "rsync1"){
+                                cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /";
+                            } else if(event.fragment.id === "rsync2"){
+                                cmd = "$ rsync -avzx --progress --exclude='*.txt' --log-file=~/Desktop/rsync-1.log /pyforav/120th_anniversary/0909 ~/Desktop";
+                            } else if(event.fragment.id === "mv"){
+                                cmd = "$ mv ~/Downloads/pyforav ~/Desktop";
+                            } else if(event.fragment.id === "cp"){
+                                cmd = "$ cp /pyforav/on_demand/catexhibit_1157.mov ~/Desktop<br>$ cp -R /pyforav/on_demand ~/Desktop";
+                            } else if(event.fragment.id === "mkdir"){                                        
+                                cmd = "$ mkdir ~/Desktop/2022-05-04<br>$ mkdir -p ~/Desktop/2022-05-04/parent/child";
+                            } else if(event.fragment.id === "md5sum"){
+                                cmd = "$ md5sum /pyforav/federal_grant/napl_1125_pres.mov";
+                            
+                            } else if(event.fragment.id === "shasum"){
+                                cmd = "$ shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov";
+                            } else if(event.fragment.id === "for"){
+                                            cmd = "$ for file in *; do echo $file; done<br>$ for file in *.mov; do shasum -p -a 256 $file >> $file.sha256; done";
                             } else {
                                 cmd = "";
                             }
