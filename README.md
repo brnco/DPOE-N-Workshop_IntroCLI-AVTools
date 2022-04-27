@@ -80,6 +80,8 @@ These tools include:
 
 [Heroes in a Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell) by Command Line Heroes
 
+[The Bash Parser](http://mywiki.wooledge.org/BashParser) - what happens after you press enter on a command in the terminal
+
 [Script Ahoy](https://dd388.github.io/crals/) - a bash helper for archivists by Dianne Dietrich and Jarret Drake
 
 [Bash for Archivists](https://reto.ch/training/2020/202006/) - an intro course by Reto Kromer
