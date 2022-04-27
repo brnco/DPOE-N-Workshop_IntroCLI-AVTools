@@ -551,12 +551,12 @@
             <h3>CLI scripting</h3>
             <div class="twoColContainer">
              <div class="r-stack colLCLI">
-               <div class="fragment fade-in-then-out">
-                 <h3>find -exec</h3>
+               <div id="find3" class="fragment fade-in-then-out">
+                 <h3>find</h3>
                  execute a command<br>
                  on output of find
                </div>
-               <div class="fragment fade-in-then-out">
+               <div id="for" class="fragment fade-in-then-out">
                  <h3>FOR loops</h3>
                  iterate through something<br>
                  loop thru directory
@@ -618,6 +618,8 @@
                                 cmd = '$ find . -name "*.jpg"<br>$ find . -name access -type d';
                             } else if(event.fragment.id === "find2"){
                                 cmd = "$ find . -name .* -exec rm -f {}\\;<br>$ find . -type f -empty"
+                            } else if(event.fragment.id === "find3"){
+                                cmd = "$ find /pyforav/ -type f -name ".DS_Store" -delete"
                             } else if(event.fragment.id === "id_nG"){
                                 cmd = "$ id -nG";
                             } else if(event.fragment.id === "sudo"){
@@ -631,7 +633,7 @@
                             } else if(event.fragment.id === "redirects"){
                                 cmd = "$ echo 'Hello World!' >> a_file.txt<br>$ ffmpeg -i input.mp4 -f null /dev/null";
                             } else if(event.fragment.id === "rsync1"){
-                                 cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /";
+                                cmd = "$ rsync ~/Downloads/pyforav ~/Desktop<br>try the above with trailing slashes /";
                             } else if(event.fragment.id === "rsync2"){
                                 cmd = "$ rsync -avzx --progress --exclude='*.txt' --log-file=~/Desktop/rsync-1.log /pyforav/120th_anniversary/0909 ~/Desktop";
                             } else if(event.fragment.id === "mv"){
@@ -641,10 +643,12 @@
                             } else if(event.fragment.id === "mkdir"){                                        
                                 cmd = "$ mkdir ~/Desktop/2022-05-04<br>$ mkdir -P ~/Desktop/2022-05-04/parent/child";
                             } else if(event.fragment.id === "md5sum"){
-                                cmd = "md5sum /pyforav/federal_grant/napl_1125_pres.mov";
+                                cmd = "$ md5sum /pyforav/federal_grant/napl_1125_pres.mov";
                             
                             } else if(event.fragment.id === "shasum"){
-                                cmd = "shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov"
+                                cmd = "$ shasum -a 256 -p /pyforav/federal_grant/napl_1125_pres.mov"
+                            } else if(event.fragment.id === "for"){
+                                            cmd = "$ for file in *; do echo $file; done<br>$ for file in *.mov; do shasum -p -a 256 $file >> $file.sha256; done"
                             } else {
                                 cmd = "";
                             }
