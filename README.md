@@ -94,19 +94,29 @@ These tools include:
 
 ## Test Files
 
-Please download a set of test files that you'll use for both days 1 and 2 [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
+Please download a set of test files that you'll use during the webinar [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
 
-## Mac Setup Instructions
+## Text Editor
 
-Macs ship with an application named “Terminal” which is their default command line interface. It will work great for this webinar, you may even see me using at some point.
+You will need a text editor - text editors are different than Microsoft Word. You'll be editing .txt and .sh files. On Windows, the default editor is Notepad, which will work fine. There's also Notepad++. On Mac, the default text editor is TextEdit, also fine.
 
-We will be using something called a “package manager” to install the software tools we’re demo-ing. Package managers help people manage their software without the use of “installers” like you might be used to, they’re very common on Linux.
+I strongly recommend looking into the [Atom text editor](https://atom.io/), which is available on all platforms. It's a little heavy on RAM usage but has excellent features and customization.
 
-Once you have installed the package manager, Homebrew, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
+I will mostly be using a terminal-based text editor (i.e. a text editor that opens within the terminal) named [Vim](https://www.vim.org/), which is probably already installed on your system. Vim is legendarily difficult to use, though, and I don't really recommend it for beginners. Still, if you want to dive into the deepest deep end, it's there.
 
-### Install Homebrew
+## OS-specific installs
 
-For Mac, the package manager we’ll be using is called Homebrew. If you have administrative access to your machine, you can install homebrew with [the steps on their website](https://brew.sh) (it’s a Terminal command).
+### Mac Setup Instructions
+
+Macs ship with an application named “Terminal” which is their default command line interface. It will work great for this webinar
+
+To install the tools/ software for this webinar, we will be using something called a “package manager.” Package managers help people manage their software without the use of “installers” like you might be used to, they’re very common on Linux nad in programmer spaces, generally.
+
+For Macs, the packagae manager is named Homebrew and, once you have installed it, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
+
+#### Install Homebrew
+
+If you have administrative access to your machine, you can install Homebrew with [the steps on their website](https://brew.sh) (it’s a Terminal command).
 
 If you don't have admin access on your Mac, you can still install Homebrew and the other tools for this workshop by using the below steps.
 
@@ -126,33 +136,49 @@ If you don't have admin access on your Mac, you can still install Homebrew and t
 With either install method, you can check if your install was successful by opening Terminal and typing `brew help` - if you get help output, you're good; if you get an error, email me.
 
 
-## Windows setup instructions
+### Windows setup instructions
 
-This workshop is based on the BASH programming language/ shell, which is not available by default on Windows as it is on Mac. Windows uses a proprietary command-line interface referred to cmd.exe, originally released in 1993. It’s like bash in its operation but there are many, many syntactical and technical differences. While I have experience scripting on Windows, it was how I initially learned most of this, those skills are not very sharp at this time and I just don’t think I can support you at the level I’d need to in this workshop.
+This workshop is based on the BASH programming language/ shell, which is not available by default on Windows as it is on Mac. Windows uses a proprietary command-line interface referred to as cmd.exe, originally released in 1993. It’s like bash in its operation but there are many, many syntactical and technical differences. Because it's Windows, and they can't do anything just one way, there's another application called PowerShell which is a bit more Bash-like. While I have experience scripting on Windows, it was how I initially learned most of this, those skills are not very sharp at this time and I just don’t think I can support you at the level I’d need to in this workshop.
 
-That being said, you are welcome to follow along in CMD and make the modifications necessary, if you’d like.
+That being said, you are welcome to follow along in CMD/ PowerShell and make the modifications necessary, if you’d like.
 
-Otherwise, we’re going to install bash on your Windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them.
+Otherwise, we’re going to install Bash on your Windows machine, through the Windows subsystem for Linux (WSL). WSL is like having Linux installed, except without the headache of partitioning discs or creating bootable disc images - it’s Linux running as a Microsoft Windows application. It’s an official Windows software, so you can trust it at the same level you trust anything from them (😉)
 
-With WSL installed, we will then use the Ubuntu Linux package manager, apt-get, to install software.
+With WSL installed, we will then use the Ubuntu Linux package manager, named apt, to install software.
 
 Once you have installed WSL, proceed to the [tools install section](https://github.com/brnco/DPOE-N-Workshop_IntroCLI-AVTools#install-tools)
 
-### Install Windows Subsystem for Linux (WSL)
+#### Install Windows Subsystem for Linux (WSL)
 
 To install WSL, follow [the instructions on the Microsoft website](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Here is a great video](https://www.youtube.com/watch?v=X-DHaQLrBi8) describing the steps, as well
 
-## Install tools
+## Install command line tools
 
 This section assumes that you have completed the above steps to install Homebrew/ WSL
 
 This software is installed entirely via the command line. Each command is written on its own line and will appear formatted `like this`. Type the command in exactly as you see it here and press enter after each command.
 
+### grabbags
+
+grabbags is a software tool maintained the Association of Moving Image Archivists Open Source Committee and it helps archivists manage bags in the manner of the Library of Congress’ BagIt specification.
+
+#### Mac
+
+`brew tap amiaopensource/amiaos`
+
+`brew install grabbags`
+
+#### WSL
+
+`cd ~/`
+
+`git clone https://github.com/amiaopensource/grabbags.git`
+
 ### ffmpeg
 
-ffmpeg is one of the most important and widely-used software projects on earth - it’s the backbone of Netflix and Facebook streaming services, as well as VLC. ffmpeg helps people stream, transcode, and investigate audiovisual media files.
+ffmpeg is one of the most important and widely-used software projects on earth - it’s the backbone of Netflix and Facebook streaming services, as well as VLC. ffmpeg helps people stream, transcode, and investigate audiovisual media files. We won't be learning much about its use in the webinar, but I will deploy it as an example a few times, and it's handy to have.
 
 #### Mac
 
@@ -176,7 +202,7 @@ Note that I haven't tested every functionality of the above ffmpeg build. There 
 
 ### MediaInfo
 
-MediaInfo creates structured technical metadata from a variety of audiovisual media filetypes, everything from sample rates to listing subtitle tracks.
+MediaInfo creates structured technical metadata from a variety of audiovisual media filetypes, everything from sample rates to listing subtitle tracks. We won't be learning MediaInfo directly in this webinar, but I will be using it in a couple of examples. And, it's handy to have.
 
 #### Mac
 
@@ -186,22 +212,6 @@ MediaInfo creates structured technical metadata from a variety of audiovisual me
 
 `apt-get install mediainfo`
 
-### grabbags
-
-grabbags is a software tool maintained the Association of Moving Image Archivists Open Source Committee and it helps archivists manage bags in the manner of the Library of Congress’ BagIt specification.
-
-#### Mac
-
-`brew tap amiaopensource/amiaos`
-
-`brew install grabbags`
-
-#### WSL
-
-`cd ~/`
-
-`git clone https://github.com/amiaopensource/grabbags.git`
-
 # Presenter Bio
 
 Brendan Coates is a gardener, musician, proud cat-parent, and member of the Los Angeles Tenants Union. He has been working to ensure the long-term stability and relevance of archival audiovisual materials since 2011, with a particular focus on oral histories, for which he's contributed to programs at The Academy of Motion Picture Arts and Sciences, The History Makers, and, currently, at the Computer History Museum. His background with historical AV also led him to the UCSB Library, where he headed the Special Research Collections digitization lab for four years, contributing to their cylinder program and The National Jukebox projects, among others. A lifelong interest in computers and aversion to boring work inspired him to start learning Bash and Python and integrating them into his professional life, and he's just been on that path ever since. He's a graduate of the University of Michigan's School of Information (#HailToTheVictims), a winner of the James A. Lindner Prize for [QCT-Parse](https://github.com/FutureDays/qct-parse), a winner of the IGF Nuovo Award with [Cassie McQuater](http://cassiemcquater.com/) for his contribution to her web game [Black Room](https://cass.itch.io/blackroom), and an active member of The Association for Moving Image Archivists ([AMIA](https://amianet.org/)) and the Oral History Association's Archives Interest Group ([OHAAIG](https://www.oralhistory.org/oha-archives-interest-group-oha-aig/)).
@@ -210,11 +220,9 @@ Brendan Coates is a gardener, musician, proud cat-parent, and member of the Los 
 
 As a project about open-source software, this presentation is also entirely open source. As such, it is built on top of the work of others, notably:
 
-Lauren Sorensen, who spear-headed this whole thing
+Natalie Baur, Emma Volk, Kevin, Juana Suarez, Jess Cayer, and the team at NYU MIAP - our gracious hosts who spent many hours reviewing applications
 
-Juana Suarez, Jess Cayer, and the team at NYU MIAP - our gracious hosts who spent many hours reviewing applications
-
-Nick Krabbenhoeft and Ben Turkus, who are doing the Day 2 of this series, an intro to Python
+Lauren Sorensen - who initially approached me about this in 2021
 
 Ashley Blewer, Dianne Dietrich, Jarret Drake, Reto Kromer - as mentioned above, these people don't just do good work they also share it
 
