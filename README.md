@@ -94,13 +94,13 @@ These tools include:
 
 ## Test Files
 
-Please download a set of test files that you'll use during the webinar [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
+Please download a set of test files (pyforav.zip) that you'll use during the webinar [at this link](https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing)
 
 ## Text Editor
 
 You will need a text editor - text editors are different than Microsoft Word. You'll be editing .txt and .sh files. On Windows, the default editor is Notepad, which will work fine. There's also Notepad++. On Mac, the default text editor is TextEdit, also fine.
 
-I strongly recommend looking into the [Atom text editor](https://atom.io/), which is available on all platforms. It's a little heavy on RAM usage but has excellent features and customization.
+I strongly recommend looking into the [Atom text editor](https://atom.io/), which is available on all platforms. It's a little heavy on RAM usage but has excellent features and customization. The most popular text editor is [Microsoft's VSCode](https://code.visualstudio.com/) but I don't use it and can't provide support for it.
 
 I will mostly be using a terminal-based text editor (i.e. a text editor that opens within the terminal) named [Vim](https://www.vim.org/), which is probably already installed on your system. Vim is legendarily difficult to use, though, and I don't really recommend it for beginners. Still, if you want to dive into the deepest deep end, it's there.
 
@@ -138,7 +138,7 @@ With either install method, you can check if your install was successful by open
 
 ### Windows setup instructions
 
-This workshop is based on the BASH programming language/ shell, which is not available by default on Windows as it is on Mac. Windows uses a proprietary command-line interface referred to as cmd.exe, originally released in 1993. It’s like bash in its operation but there are many, many syntactical and technical differences. Because it's Windows, and they can't do anything just one way, there's another application called PowerShell which is a bit more Bash-like. While I have experience scripting on Windows, it was how I initially learned most of this, those skills are not very sharp at this time and I just don’t think I can support you at the level I’d need to in this workshop.
+This workshop is based on the BASH programming language/ shell, which is not available on Windows as it is on Mac. Windows uses a proprietary command-line interface referred to as cmd.exe, originally released in 1993. It’s like bash in its operation but there are many, many syntactical and technical differences. Because it's Windows, and they can't do anything just one way, there's another application called PowerShell which is a bit more Bash-like. While I have experience scripting on Windows, it was how I initially learned most of this, those skills are not very sharp at this time and I just don’t think I can support you at the level I’d need to in this workshop.
 
 That being said, you are welcome to follow along in CMD/ PowerShell and make the modifications necessary, if you’d like.
 
@@ -190,7 +190,7 @@ Choose one of the following options
 
 `apt-get install ffmpeg`
 
-Note that I haven't tested every functionality of the above ffmpeg build. There may be commands which won't work due to licensing issues with non-free formats (notably H.264 and mp3). The below build is ~probably better.
+Note that I haven't tested every functionality of the above ffmpeg build. There may be commands which won't work due to licensing issues with non-free formats (notably H.264 and mp3). The below build is probably better.
 
 `sudo add-apt-repository ppa:mc3man/trusty-media`
 
