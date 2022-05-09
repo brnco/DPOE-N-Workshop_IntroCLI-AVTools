@@ -4,6 +4,7 @@
 # to use a snippet below, copy + paste into a new file, include the shebang (#!/usr/bin/env bash) at the top, save with a .sh extension, and sudo chmod +x the script to make it executable
 # lines that start with a hashtag are comments
 #
+# example 1 - loop over files in directory
 # include the source directory you want to work on as the first argument, e.g.:$ ./script.sh ~/Downloads/pyforav/on_demand
 
 source_directory="$1"
@@ -31,3 +32,36 @@ for file in "$source_directory"/*; do
     mkdir -p "$subdir"
     mv "$file" "$subdir"
 done
+
+# example 2 - BagIt python functions
+# since we didn't get to sepnd as much time on this as I wanted, here's some example BagIt functions using the LOC Python Library
+# note: depending on your system's configuration, you may need to use "python3" as an alternative to invoking "python" and "pip3" as alternative to "pip"
+# additionally, you may need to run BagIt with "python -m bagit" instead of "bagit.py" - again, depends on your system
+# for more info: https://github.com/LibraryOfCongress/bagit-python
+#
+# download / install python 3: https://www.python.org/downloads/
+# download / install bagit
+pip install bagit
+
+# check install
+python -m bagit --help
+# OR
+bagit.py -h
+
+# create a bag
+bagit.py /path/to/directory
+# OR
+python -m bagit /path/to/directory
+
+# verify a bag
+# note, directory here has to be a bag
+bagit.py --validate /path/to/directory
+# OR
+python -m bagit --validate /path/to/directory
+
+# verify a bag without using checksums
+# i.e. verify bag completeness
+# helpful for bags with large files
+bagit.py --validate --completeness-only /path/to/directory
+# OR
+python -m bagit --validate --completeness-only /path/to/directory
