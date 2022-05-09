@@ -1,0 +1,272 @@
+11:04:11 From Brendan Coates to Everyone:
+	https://drive.google.com/drive/folders/1QqII7T8oRvwAVdBmZjcNh5DlDc93tR6s?usp=sharing
+
+11:05:02 From Brendan Coates to Everyone:
+	https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html
+
+11:35:29 From Liz Jones-Minsinger to Everyone:
+	Margaret Hamilton?
+
+11:54:07 From Marta Fodor to Everyone:
+	could you repeat” “what software to run” “what to do” etc etf
+
+11:57:29 From Brendan Coates to Everyone:
+	yeah so, the "command" is the software to run, the "options" are how to run it, and the "arguments" are what to run the software on
+
+12:02:14 From Marta Fodor to Everyone:
+	thanks!
+
+12:06:12 From Bill Bowman to Everyone:
+	fg
+
+12:16:29 From Natalie Baur (she/her) to Everyone:
+	thank you for the transparency on the learning curve 🙂
+
+12:18:56 From Wen Nie Ng (They/them/their) to Everyone:
+	what's the hint that you can tell right-away it's python 2 from the Stack Overflow just now
+
+12:25:06 From Kelly Bolding (she/they) to Everyone:
+	this alone is going to save me so much time! :)
+
+12:26:13 From AReporter to Everyone:
+	you can just do that by putting it in a web browser tho - is it not the same? for list
+
+12:28:09 From Marta Fodor to Everyone:
+	I’m trying some of these in Terminal and nothing is happening. DO you have to type ‘>’ before everything? (Sorry- absolute novice here)
+
+12:28:30 From Joan Gandy to Everyone:
+	what was the difference for the command for Windows and Mac, sorry I missed something you said about that
+
+12:32:52 From Irina Rogova she/her to Everyone:
+	In the WSL every cd command returns "No such file or directory," but when I try the same cd path in Windows command prompt it works. Is this in error in the Ubuntu set up?
+
+12:34:41 From AReporter to Everyone:
+	what about a % symbol
+
+12:34:41 From Sarah Patton to Everyone:
+	We can't see the WSL, still on your slide screen
+
+12:34:51 From Joan Gandy to Everyone:
+	I can't see it either
+
+12:36:56 From Bill Bowman to Everyone:
+	Any symbol before the command at this point is not to be typed.
+
+12:37:05 From Bill Bowman to Everyone:
+	so cd, not %cd
+
+12:37:09 From Bill Bowman to Everyone:
+	or >cd
+
+13:05:14 From Jordon Steele to Everyone:
+	why would you only want to see the tail end of a file?
+
+13:05:45 From Bill Bowman to Everyone:
+	I usually use it to read the most recent items in a logfile. Especially if it is really long.
+
+13:08:02 From AReporter to Everyone:
+	ack I made a typo and now my terminal just says quote>
+
+13:08:04 From Wen Nie Ng (They/them/their) to Everyone:
+	i'm trying to understand the use case of printing out text for the file “cat a_file.txt”
+
+13:08:58 From Bill Bowman to Everyone:
+	AReporter press <CTRL-C>
+
+13:09:26 From Jordon Steele to Everyone:
+	makes sense, thanks
+
+13:12:47 From Wen Nie Ng (They/them/their) to Everyone:
+	Thank you
+
+14:01:52 From Brendan Coates to Everyone:
+	howdy, I am here if folks have questions
+
+14:03:26 From Sarah Patton to Everyone:
+	When I tried doing the echo 'Hello World!' >> a_file.txt command, I got a Permission denied error
+
+14:03:36 From Bill Bowman to Everyone:
+	I know. It is weirdly.
+
+14:05:16 From Shana Sandor (she/her) to Everyone:
+	when I type ls it only shows 'grabbags', not the other two programs I supposedly downloaded/added ffmpeg and mediainfo, is that right?
+
+14:08:33 From Brendan Coates to Everyone:
+	which ffmpeg
+
+14:10:29 From AReporter to Everyone:
+	the echo test didn't do anything for me - am I missing something
+
+14:11:30 From Shana Sandor (she/her) to Everyone:
+	ok, found ffmpeg and mediainfo, but can't find pyforav.zip which is downloaded to my C drive
+
+14:12:16 From Bill Bowman to Everyone:
+	Shana, if you are in WSL, it resides in the /mnt/c/……… /Downloads
+
+14:12:36 From Bill Bowman to Everyone:
+	the …. is something like Users/shana/Downloads
+
+14:12:59 From Irina Rogova she/her to Everyone:
+	AReporter: I first got started using this for my work really basically--I needed to create a ton of folders for digitization all at once and used CDI to do that. I'm learning it now for more digital preservation stuff.
+
+14:13:00 From Bill Bowman to Everyone:
+	or maybe a OneDrive/shana/Downloads
+
+14:13:27 From AReporter to Everyone:
+	THanks - we use it to upload to our DAMS - but I just plug in the script I get from it
+
+14:13:29 From AReporter to Everyone:
+	IT
+
+14:13:43 From Shana Sandor (she/her) to Everyone:
+	thanks Bill, I think I found it!
+
+14:13:50 From Bill Bowman to Everyone:
+	Huzzah!
+
+14:16:41 From Chelsea Denault to Everyone:
+	🐶!!!
+
+14:32:45 From Kelly Bolding (she/they) to Everyone:
+	With rsync for compressed files, is there a higher risk of failure or errors, or is it just slower since it has to change more content?
+
+14:33:25 From Irina Rogova she/her to Everyone:
+	Can you show this in WSL?
+
+14:34:24 From Liz Jones-Minsinger to Everyone:
+	^yes please!
+
+14:41:16 From Irina Rogova she/her to Everyone:
+	I am not seeing the files sync in WSL the way you described, could you go through it once again?
+
+14:42:40 From Irina Rogova she/her to Everyone:
+	Nevermind, I got it
+
+14:45:19 From Kelly Bolding (she/they) to Everyone:
+	that’s helpful, thank you!
+
+14:49:02 From Natalie Baur (she/her) to Sandy(Direct Message):
+	hi sandy did you have a question?
+
+14:52:04 From Tani Nakamoto she|hers to Everyone:
+	I’m getting “command not found” when trying md5sum
+
+14:52:10 From Marta Fodor to Everyone:
+	for md5sum command not found
+
+14:52:14 From Chelsea Denault to Everyone:
+	Same!
+
+14:52:18 From Marta Fodor to Everyone:
+	mac
+
+14:52:21 From Tani Nakamoto she|hers to Everyone:
+    mac
+
+14:52:22 From Chelsea Denault to Everyone:
+	Mac
+
+14:52:36 From Brendan Coates to Everyone:
+	brew install md5sum
+
+14:52:36 From Wen Nie Ng (They/them/their) to Everyone:
+	i got same “command not found”, installed homebrew. On Mac
+
+14:55:47 From AReporter to Everyone:
+	still installing md5sum on my million year old mac
+
+14:56:22 From Marta Fodor to Everyone:
+	me too. it’s at 0% still. should we abort?
+
+14:57:45 From Tani Nakamoto she|hers to Everyone:
+	It’s asking me to install “md5sha1sum” instead?
+
+14:58:47 From Bill Bowman to Everyone:
+	Yes, that is both of them.
+
+14:59:13 From Bill Bowman to Everyone:
+	You get both md5 and sha with that command.
+
+14:59:47 From Chelsea Denault to Everyone:
+	md5sum worked for me
+
+15:02:17 From Irina Rogova she/her to Everyone:
+	Will the slides (and maybe the chat?) be shared after this? That would be awesome.
+
+15:02:27 From Jordon Steele to Everyone:
+	indeed it does...thanks to both of you
+
+15:02:59 From Liz Jones-Minsinger to Everyone:
+	Slides here, Irina: https://brnco.github.io/DPOE-N-Workshop_IntroCLI-AVTools/webinar.html
+
+15:03:15 From AReporter to Everyone:
+	so I did it and it change a bunch of .mov files to .md5 - was that supposed to happen?
+
+15:03:17 From AReporter to Everyone:
+	ha
+
+15:03:18 From Irina Rogova she/her to Everyone:
+	Oh duh I forgot, thanks Liz!
+
+15:03:53 From Sam Sfirri to Everyone:
+	Is there any reason why you would want to make a md5 AND sha checksum for the same file?
+
+15:06:36 From Marta Fodor to Everyone:
+	any good place to see how this is actually used in an archive? Somewhat hard to visualize how it would be applied.
+
+15:16:53 From Sam Sfirri to Everyone:
+	Not at all!
+
+15:17:24 From Marta Fodor to Everyone:
+	ooo can you share that with us?
+
+15:19:02 From Marta Fodor to Everyone:
+	not the script, but the flowchart. That was great
+
+15:22:10 From Eve Perry to Everyone:
+	Archivematica does not perform any of these actions? They must be performed separately through a shell script?
+
+15:22:20 From Marta Fodor to Everyone:
+	lol, but thanks
+
+15:23:33 From Kelly Bolding (she/they) to Everyone:
+	are those synths? :)
+
+15:23:34 From Tani Nakamoto she|hers to Everyone:
+	Awwww so cute
+
+15:23:36 From Liz Jones-Minsinger to Everyone:
+	Yay puppy!
+
+15:23:47 From Chelsea Denault to Everyone:
+	Puppy!!!
+
+15:31:06 From Brendan Coates to Everyone:
+	https://github.com/amiaopensource/grabbags
+
+15:31:14 From Joan Gandy to Everyone:
+	this is not for WSL correct?
+
+15:47:15 From AReporter to Everyone:
+	when I put in grabbage it says no command found
+
+15:48:45 From AReporter to Everyone:
+	never mind it works
+
+15:51:23 From Reginaldo Carvalho to Everyone:
+	is it possible to show how to generate baggit file with grabbags? Or does it only validate baggits files?
+
+16:15:01 From Marta Fodor to Everyone:
+	Have to get going. Thanks for the workshop
+
+16:16:44 From Irina Rogova she/her to Everyone:
+	So we are seeing a lot of issues with WSL--what are our options if our institutions don't let us control what kind of computer we work with?
+
+16:17:10 From AReporter to Everyone:
+	it was good until recently
+
+16:17:13 From AReporter to Everyone:
+	no lag
+
+16:18:59 From Bill Bowman to Everyone:
+	chmod +x
